@@ -200,6 +200,7 @@
 		83EC8A972AEFA36600740AFF /* HYUkCenterHistoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A732AEFA36600740AFF /* HYUkCenterHistoryListViewController.m */; };
 		83EC8A9A2AEFA3B300740AFF /* YXTypeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A982AEFA3B300740AFF /* YXTypeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83EC8A9B2AEFA3B300740AFF /* YXTypeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A992AEFA3B300740AFF /* YXTypeManager.m */; };
+		83EC8E462AEFB3C200740AFF /* HYMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EC8E452AEFB3C200740AFF /* HYMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -399,6 +400,7 @@
 		83EC8A732AEFA36600740AFF /* HYUkCenterHistoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkCenterHistoryListViewController.m; sourceTree = "<group>"; };
 		83EC8A982AEFA3B300740AFF /* YXTypeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXTypeManager.h; sourceTree = "<group>"; };
 		83EC8A992AEFA3B300740AFF /* YXTypeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXTypeManager.m; sourceTree = "<group>"; };
+		83EC8E452AEFB3C200740AFF /* HYMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HYMedia.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,6 +408,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EC8E462AEFB3C200740AFF /* HYMedia.framework in Frameworks */,
 				5F1984C2ACD88A9865574285 /* Pods_VideoFrame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +437,7 @@
 		83EC88BC2AEF536000740AFF /* VideoFrame */ = {
 			isa = PBXGroup;
 			children = (
+				83EC8E452AEFB3C200740AFF /* HYMedia.framework */,
 				83EC89EB2AEF9CCB00740AFF /* controller */,
 				83EC89D82AEF9BCF00740AFF /* DB */,
 				83EC898F2AEF98A900740AFF /* Api */,
@@ -1315,6 +1319,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VideoFrame",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1350,6 +1358,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VideoFrame",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

@@ -24,16 +24,17 @@
 #import "YXTypeManager.h"
 #import "HYUkVideoConfigManager.h"
 #import "MYToast.h"
+#import <HYMedia/HYMedia.h>
 
 static CGFloat briefViewHeoght = 60.0;
 
 static NSInteger allTime = 31;
 
-@interface HYUkDetailViewController ()<HYBaseViewDelegate>
+@interface HYUkDetailViewController ()<HYBaseViewDelegate,HYVideoPlayViewDelegate>
 
 @property(nonatomic, assign) CGFloat playViewHeight;
 @property(nonatomic, strong) UIScrollView * scrollView;
-@property(nonatomic, strong) HYUkVideoPlayView * playView;
+//@property(nonatomic, strong) HYUkVideoPlayView * playView;
 @property(nonatomic, strong) HYUkVideoDetailBriefView * briefView;
 @property(nonatomic, strong) HYUkVideoDetailSelectWorkView * selectWorkView;
 @property(nonatomic, strong) HYUkVideoRecommendView * recommendView;
@@ -42,6 +43,10 @@ static NSInteger allTime = 31;
 @property(nonatomic, strong) HYUkDetailErrorView * errorView;
 @property(nonatomic, strong) HYUkAllGatherListView * gatherListView;
 @property(nonatomic, strong) HYUkDownGatherView * downGatherView;
+
+@property(nonatomic, strong) HYVideoPlayView * playVideoView;
+@property(nonatomic, assign) NSInteger currentTime;
+
 
 @property(nonatomic, strong) UIView * adView;
 
@@ -52,7 +57,7 @@ static NSInteger allTime = 31;
 @implementation HYUkDetailViewController
 
 - (void)dealloc {
-    [self.playView removeView];
+//    [self.playView removeView];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     NSLog(@"HYVideoDetailViewController 灰飞烟灭！");
 }
@@ -68,7 +73,7 @@ static NSInteger allTime = 31;
     
 //    [self closeAddButton];
     
-    [self.playView saveHistoryRecord];
+//    [self.playView saveHistoryRecord];
     
     if ([self.delegate respondsToSelector:@selector(changeVideoProgressVideoId:)]) {
         [self.delegate changeVideoProgressVideoId:self.videoId];
@@ -93,11 +98,11 @@ static NSInteger allTime = 31;
     
     self.playViewHeight = 220 * SCREEN_WIDTH / 390 + (IS_iPhoneX ? 44 : 24);
 
-    self.playView = [HYUkVideoPlayView new];
-    self.playView.delegate = self;
-    [self.view addSubview:self.playView];
+    self.playVideoView = [HYVideoPlayView new];
+    self.playVideoView.delegate = self;
+    [self.view addSubview:self.playVideoView];
 
-    [self.playView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.playVideoView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.right.equalTo(self.view);
         make.height.mas_offset(self.playViewHeight);
     }];
@@ -114,7 +119,7 @@ static NSInteger allTime = 31;
     }
     
     [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.playView.mas_bottom).offset(0);
+        make.top.equalTo(self.playVideoView.mas_bottom).offset(0);
         make.left.right.bottom.equalTo(self.view);
     }];
 
@@ -179,7 +184,7 @@ static NSInteger allTime = 31;
     self.errorView.hidden = YES;
     [self.errorView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.equalTo(self.view);
-        make.top.equalTo(self.playView.mas_bottom).offset(0);
+        make.top.equalTo(self.playVideoView.mas_bottom).offset(0);
     }];
     
     //监听程序进入前台和后台
@@ -194,7 +199,7 @@ static NSInteger allTime = 31;
 
 - (void)enterBackGround:(NSNotificationCenter *)notification
 {
-    [self.playView saveHistoryRecord];
+    [self saveHistoryRecord];
 }
 
 - (void)getData {
@@ -212,8 +217,10 @@ static NSInteger allTime = 31;
         weakSelf.selectWorkView.data = responseObject;
         [weakSelf.selectWorkView loadContent];
         
-        weakSelf.playView.data = responseObject;
-        [weakSelf.playView loadContent];
+        
+        [weakSelf.playVideoView startPlayUrl:@"" startPosition:0];
+//        weakSelf.playView.data = responseObject;
+//        [weakSelf.playView loadContent];
 
         [weakSelf getGuessLikeList];
         
@@ -223,7 +230,7 @@ static NSInteger allTime = 31;
         weakSelf.downGatherView.data = responseObject;
         [weakSelf.downGatherView loadContent];
         
-        [weakSelf.playView startPlay];
+//        [weakSelf.playView startPlay];
         
 
         [[YXTypeManager shareInstance] showBannerAdComplete:^(BOOL complete, UIView * adView) {
@@ -347,7 +354,10 @@ static NSInteger allTime = 31;
                     }];
                     return;
                 }
-                [weakSelf.playView changeSelect:dic[@"name"] Url:dic[@"url"]];
+                
+                [weakSelf.playVideoView startPlayUrl:@"" startPosition:0];
+
+//                [weakSelf.playView changeSelect:dic[@"name"] Url:dic[@"url"]];
             });
         }];
         
@@ -365,7 +375,9 @@ static NSInteger allTime = 31;
             }];
             return;
         }
-        [self.playView changeSelect:dic[@"name"] Url:dic[@"url"]];
+        [self.playVideoView startPlayUrl:@"" startPosition:0];
+
+//        [self.playView changeSelect:dic[@"name"] Url:dic[@"url"]];
         return;
     }
     
@@ -409,6 +421,15 @@ static NSInteger allTime = 31;
 
 -(UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
+}
+
+- (void)currentTime:(NSInteger)currentTime
+{
+    self.currentTime = currentTime;
+}
+
+- (void)saveHistoryRecord {
+    
 }
 
 @end
