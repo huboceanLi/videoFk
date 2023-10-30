@@ -1,0 +1,30 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '13.0'
+target 'VideoFrame' do
+  use_frameworks!
+
+
+  pod 'QMUIKit', '4.6.1'
+  pod 'Masonry'
+  pod 'HYBaseTool', '1.0.4'
+  pod 'AFNetworking'
+  pod 'CTNetworking'
+  pod 'JXCategoryView'
+  pod 'YYModel'
+  pod 'HYText'
+  pod 'YYCategories'
+  pod 'YYWebImage'
+  pod 'MJRefresh'
+  pod 'WCDB.swift', '1.1.0'
+
+  post_install do |pi|
+    pi.pods_project.targets.each do |t|
+      t.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+
+      end
+    end
+
+  end
+  
+end

@@ -22,6 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		83EC88CA2AEF554500740AFF /* VideoFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EC88C92AEF552800740AFF /* VideoFrame.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		AB9D97296C7D59CFCDF38DAC /* Pods_videoFK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795F87B731E34DB33D012BFB /* Pods_videoFK_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -34,10 +35,17 @@
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = videoFK;
 		};
+		83EC88C82AEF552800740AFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83EC88C42AEF552800740AFF /* VideoFrame.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83EC88BA2AEF536000740AFF;
+			remoteInfo = VideoFrame;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		003D8636BF159683C4216731 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		003D8636BF159683C4216731 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* videoFK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = videoFK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,10 +67,11 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		795F87B731E34DB33D012BFB /* Pods_videoFK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_videoFK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83EC88C42AEF552800740AFF /* VideoFrame.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VideoFrame.xcodeproj; path = ../VideoFrame/VideoFrame.xcodeproj; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C9BED46A3C6C12405E7B973 /* Pods-videoFK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoFK_Example.debug.xcconfig"; path = "Target Support Files/Pods-videoFK_Example/Pods-videoFK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AF5FD146BD6A046869243B1B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		B379DF21E33F455B38153D7B /* videoFK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = videoFK.podspec; path = ../videoFK.podspec; sourceTree = "<group>"; };
+		AF5FD146BD6A046869243B1B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B379DF21E33F455B38153D7B /* videoFK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = videoFK.podspec; path = ../videoFK.podspec; sourceTree = "<group>"; };
 		BD81B5258EAF96184A68A6BA /* Pods_videoFK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_videoFK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C0992025051AD0AB97D42F /* Pods-videoFK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoFK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-videoFK_Tests/Pods-videoFK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0F707AA802C4C6BA6492D6C /* Pods-videoFK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoFK_Example.release.xcconfig"; path = "Target Support Files/Pods-videoFK_Example/Pods-videoFK_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EC88CA2AEF554500740AFF /* VideoFrame.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -98,6 +108,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				83EC88C42AEF552800740AFF /* VideoFrame.xcodeproj */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for videoFK */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -185,6 +196,14 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		83EC88C52AEF552800740AFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83EC88C92AEF552800740AFF /* VideoFrame.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		FD000A9E2E187DC4D3FDE08D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +212,6 @@
 				C3C0992025051AD0AB97D42F /* Pods-videoFK_Tests.debug.xcconfig */,
 				F4A1496CC4047BEDA57E47A3 /* Pods-videoFK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,12 +276,19 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 6003F581195388D10070C39A;
 			productRefGroup = 6003F58B195388D20070C39A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 83EC88C52AEF552800740AFF /* Products */;
+					ProjectRef = 83EC88C42AEF552800740AFF /* VideoFrame.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6003F589195388D20070C39A /* videoFK_Example */,
@@ -271,6 +296,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		83EC88C92AEF552800740AFF /* VideoFrame.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VideoFrame.framework;
+			remoteRef = 83EC88C82AEF552800740AFF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6003F588195388D20070C39A /* Resources */ = {
@@ -324,10 +359,40 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-videoFK_Example/Pods-videoFK_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
+				"${BUILT_PRODUCTS_DIR}/CTNetworking/CTNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/JXCategoryView/JXCategoryView.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLiteRepairKit/sqliterk.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDB.swift/WCDBSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher/sqlcipher.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/YYWebImage/YYWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/videoFK/videoFK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXCategoryView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QMUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqliterk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDBSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqlcipher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCategories.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/videoFK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,6 +562,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "videoFK/videoFK-Prefix.pch";
 				INFOPLIST_FILE = "videoFK/videoFK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +579,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "videoFK/videoFK-Prefix.pch";
 				INFOPLIST_FILE = "videoFK/videoFK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

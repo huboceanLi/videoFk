@@ -1,0 +1,6 @@
+framework module videoFK {
+  umbrella header "videoFK-umbrella.h"
+
+  export *
+  module * { export * }
+}

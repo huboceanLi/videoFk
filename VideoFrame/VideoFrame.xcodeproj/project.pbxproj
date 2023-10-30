@@ -1,0 +1,1400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F1984C2ACD88A9865574285 /* Pods_VideoFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D03D23586A8742EEC404190 /* Pods_VideoFrame.framework */; };
+		83EC88BE2AEF536000740AFF /* VideoFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88BD2AEF536000740AFF /* VideoFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83EC88D02AEF755A00740AFF /* HYUkVideoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC88CE2AEF755A00740AFF /* HYUkVideoBaseViewController.m */; };
+		83EC88D12AEF755A00740AFF /* HYUkVideoBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88CF2AEF755A00740AFF /* HYUkVideoBaseViewController.h */; };
+		83EC88D32AEF75F100740AFF /* HYUkHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88D22AEF75F100740AFF /* HYUkHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83EC88E62AEF985800740AFF /* UICollectionView+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC88D92AEF985800740AFF /* UICollectionView+EmptyView.m */; };
+		83EC88E72AEF985800740AFF /* HYLocalPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC88DA2AEF985800740AFF /* HYLocalPathManager.m */; };
+		83EC88E82AEF985800740AFF /* UITableView+EmptyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88DB2AEF985800740AFF /* UITableView+EmptyView.h */; };
+		83EC88E92AEF985800740AFF /* HYUkVideoConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88DC2AEF985800740AFF /* HYUkVideoConfigManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83EC88EA2AEF985800740AFF /* UIImage+uk_bundleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC88DD2AEF985800740AFF /* UIImage+uk_bundleImage.m */; };
+		83EC88EB2AEF985800740AFF /* UIColor+UkPublicUse.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC88DE2AEF985800740AFF /* UIColor+UkPublicUse.m */; };
+		83EC88EC2AEF985800740AFF /* UITableView+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC88DF2AEF985800740AFF /* UITableView+EmptyView.m */; };
+		83EC88ED2AEF985800740AFF /* HYLocalPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88E02AEF985800740AFF /* HYLocalPathManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83EC88EE2AEF985800740AFF /* UICollectionView+EmptyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88E12AEF985800740AFF /* UICollectionView+EmptyView.h */; };
+		83EC88EF2AEF985800740AFF /* UIImage+uk_bundleImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88E22AEF985800740AFF /* UIImage+uk_bundleImage.h */; };
+		83EC88F02AEF985800740AFF /* HYUkVideoConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC88E32AEF985800740AFF /* HYUkVideoConfigManager.m */; };
+		83EC88F12AEF985800740AFF /* AdaptScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88E42AEF985800740AFF /* AdaptScreen.h */; };
+		83EC88F22AEF985800740AFF /* UIColor+UkPublicUse.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88E52AEF985800740AFF /* UIColor+UkPublicUse.h */; };
+		83EC89442AEF989200740AFF /* MYDialogViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88F52AEF989100740AFF /* MYDialogViewController.h */; };
+		83EC89452AEF989200740AFF /* MYDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC88F62AEF989100740AFF /* MYDialogViewController.m */; };
+		83EC89462AEF989200740AFF /* DGActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88F82AEF989200740AFF /* DGActivityIndicatorView.h */; };
+		83EC89472AEF989200740AFF /* DGActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC88F92AEF989200740AFF /* DGActivityIndicatorView.m */; };
+		83EC89482AEF989200740AFF /* DGActivityIndicatorAnimationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88FA2AEF989200740AFF /* DGActivityIndicatorAnimationProtocol.h */; };
+		83EC89492AEF989200740AFF /* DGActivityIndicatorBallClipRotateMultipleAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88FC2AEF989200740AFF /* DGActivityIndicatorBallClipRotateMultipleAnimation.h */; };
+		83EC894A2AEF989200740AFF /* DGActivityIndicatorTriangleSkewSpinAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC88FD2AEF989200740AFF /* DGActivityIndicatorTriangleSkewSpinAnimation.m */; };
+		83EC894B2AEF989200740AFF /* DGActivityIndicatorTripleRingsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC88FE2AEF989200740AFF /* DGActivityIndicatorTripleRingsAnimation.m */; };
+		83EC894C2AEF989200740AFF /* DGActivityIndicatorBallGridBeatAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88FF2AEF989200740AFF /* DGActivityIndicatorBallGridBeatAnimation.h */; };
+		83EC894D2AEF989200740AFF /* DGActivityIndicatorLineScaleAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89002AEF989200740AFF /* DGActivityIndicatorLineScaleAnimation.h */; };
+		83EC894E2AEF989200740AFF /* DGActivityIndicatorTwoDotsAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89012AEF989200740AFF /* DGActivityIndicatorTwoDotsAnimation.h */; };
+		83EC894F2AEF989200740AFF /* DGActivityIndicatorNineDotsAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89022AEF989200740AFF /* DGActivityIndicatorNineDotsAnimation.h */; };
+		83EC89502AEF989200740AFF /* DGActivityIndicatorBallScaleRippleMultipleAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89032AEF989200740AFF /* DGActivityIndicatorBallScaleRippleMultipleAnimation.h */; };
+		83EC89512AEF989200740AFF /* DGActivityIndicatorFiveDotsAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89042AEF989200740AFF /* DGActivityIndicatorFiveDotsAnimation.h */; };
+		83EC89522AEF989300740AFF /* DGActivityIndicatorBallGridPulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89052AEF989200740AFF /* DGActivityIndicatorBallGridPulseAnimation.m */; };
+		83EC89532AEF989300740AFF /* DGActivityIndicatorBallScaleAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89062AEF989200740AFF /* DGActivityIndicatorBallScaleAnimation.h */; };
+		83EC89542AEF989300740AFF /* DGActivityIndicatorBallClipRotatePulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89072AEF989200740AFF /* DGActivityIndicatorBallClipRotatePulseAnimation.m */; };
+		83EC89552AEF989300740AFF /* DGActivityIndicatorTriplePulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89082AEF989200740AFF /* DGActivityIndicatorTriplePulseAnimation.m */; };
+		83EC89562AEF989300740AFF /* DGActivityIndicatorBallPulseSyncAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89092AEF989200740AFF /* DGActivityIndicatorBallPulseSyncAnimation.h */; };
+		83EC89572AEF989300740AFF /* DGActivityIndicatorBallPulseAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC890A2AEF989200740AFF /* DGActivityIndicatorBallPulseAnimation.h */; };
+		83EC89582AEF989300740AFF /* DGActivityIndicatorRotatingSandglassAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC890B2AEF989200740AFF /* DGActivityIndicatorRotatingSandglassAnimation.h */; };
+		83EC89592AEF989300740AFF /* DGActivityIndicatorBallTrianglePathAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC890C2AEF989200740AFF /* DGActivityIndicatorBallTrianglePathAnimation.h */; };
+		83EC895A2AEF989300740AFF /* DGActivityIndicatorRotatingSquaresAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC890D2AEF989200740AFF /* DGActivityIndicatorRotatingSquaresAnimation.m */; };
+		83EC895B2AEF989300740AFF /* DGActivityIndicatorBallBeatAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC890E2AEF989200740AFF /* DGActivityIndicatorBallBeatAnimation.h */; };
+		83EC895C2AEF989300740AFF /* DGActivityIndicatorBallScaleMultipleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC890F2AEF989200740AFF /* DGActivityIndicatorBallScaleMultipleAnimation.m */; };
+		83EC895D2AEF989300740AFF /* DGActivityIndicatorBallZigZagDeflectAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89102AEF989200740AFF /* DGActivityIndicatorBallZigZagDeflectAnimation.h */; };
+		83EC895E2AEF989300740AFF /* DGActivityIndicatorBallSpinFadeLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89112AEF989200740AFF /* DGActivityIndicatorBallSpinFadeLoader.h */; };
+		83EC895F2AEF989300740AFF /* DGActivityIndicatorBallScaleRippleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89122AEF989200740AFF /* DGActivityIndicatorBallScaleRippleAnimation.m */; };
+		83EC89602AEF989300740AFF /* DGActivityIndicatorBallRotateAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89132AEF989200740AFF /* DGActivityIndicatorBallRotateAnimation.m */; };
+		83EC89612AEF989300740AFF /* DGActivityIndicatorBallZigZagAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89142AEF989200740AFF /* DGActivityIndicatorBallZigZagAnimation.m */; };
+		83EC89622AEF989300740AFF /* DGActivityIndicatorThreeDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89152AEF989200740AFF /* DGActivityIndicatorThreeDotsAnimation.m */; };
+		83EC89632AEF989300740AFF /* DGActivityIndicatorLineScalePulseOutAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89162AEF989200740AFF /* DGActivityIndicatorLineScalePulseOutAnimation.m */; };
+		83EC89642AEF989300740AFF /* DGActivityIndicatorDoubleBounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89172AEF989200740AFF /* DGActivityIndicatorDoubleBounceAnimation.m */; };
+		83EC89652AEF989300740AFF /* DGActivityIndicatorLineScalePulseOutRapidAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89182AEF989200740AFF /* DGActivityIndicatorLineScalePulseOutRapidAnimation.h */; };
+		83EC89662AEF989300740AFF /* DGActivityIndicatorBallClipRotateAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89192AEF989200740AFF /* DGActivityIndicatorBallClipRotateAnimation.h */; };
+		83EC89672AEF989300740AFF /* DGActivityIndicatorRotatingTrigonAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC891A2AEF989200740AFF /* DGActivityIndicatorRotatingTrigonAnimation.h */; };
+		83EC89682AEF989300740AFF /* DGActivityIndicatorCookieTerminatorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC891B2AEF989200740AFF /* DGActivityIndicatorCookieTerminatorAnimation.m */; };
+		83EC89692AEF989300740AFF /* DGActivityIndicatorLineScalePartyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC891C2AEF989200740AFF /* DGActivityIndicatorLineScalePartyAnimation.m */; };
+		83EC896A2AEF989300740AFF /* DGActivityIndicatorLineScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC891D2AEF989200740AFF /* DGActivityIndicatorLineScaleAnimation.m */; };
+		83EC896B2AEF989300740AFF /* DGActivityIndicatorBallGridBeatAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC891E2AEF989200740AFF /* DGActivityIndicatorBallGridBeatAnimation.m */; };
+		83EC896C2AEF989300740AFF /* DGActivityIndicatorTriangleSkewSpinAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC891F2AEF989200740AFF /* DGActivityIndicatorTriangleSkewSpinAnimation.h */; };
+		83EC896D2AEF989300740AFF /* DGActivityIndicatorBallClipRotateMultipleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89202AEF989200740AFF /* DGActivityIndicatorBallClipRotateMultipleAnimation.m */; };
+		83EC896E2AEF989300740AFF /* DGActivityIndicatorTripleRingsAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89212AEF989200740AFF /* DGActivityIndicatorTripleRingsAnimation.h */; };
+		83EC896F2AEF989300740AFF /* DGActivityIndicatorBallTrianglePathAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89222AEF989200740AFF /* DGActivityIndicatorBallTrianglePathAnimation.m */; };
+		83EC89702AEF989300740AFF /* DGActivityIndicatorRotatingSandglassAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89232AEF989200740AFF /* DGActivityIndicatorRotatingSandglassAnimation.m */; };
+		83EC89712AEF989300740AFF /* DGActivityIndicatorBallPulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89242AEF989200740AFF /* DGActivityIndicatorBallPulseAnimation.m */; };
+		83EC89722AEF989300740AFF /* DGActivityIndicatorBallPulseSyncAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89252AEF989200740AFF /* DGActivityIndicatorBallPulseSyncAnimation.m */; };
+		83EC89732AEF989300740AFF /* DGActivityIndicatorTriplePulseAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89262AEF989200740AFF /* DGActivityIndicatorTriplePulseAnimation.h */; };
+		83EC89742AEF989300740AFF /* DGActivityIndicatorBallClipRotatePulseAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89272AEF989200740AFF /* DGActivityIndicatorBallClipRotatePulseAnimation.h */; };
+		83EC89752AEF989300740AFF /* DGActivityIndicatorBallScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89282AEF989200740AFF /* DGActivityIndicatorBallScaleAnimation.m */; };
+		83EC89762AEF989300740AFF /* DGActivityIndicatorFiveDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89292AEF989200740AFF /* DGActivityIndicatorFiveDotsAnimation.m */; };
+		83EC89772AEF989300740AFF /* DGActivityIndicatorBallGridPulseAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC892A2AEF989200740AFF /* DGActivityIndicatorBallGridPulseAnimation.h */; };
+		83EC89782AEF989300740AFF /* DGActivityIndicatorBallScaleRippleMultipleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC892B2AEF989200740AFF /* DGActivityIndicatorBallScaleRippleMultipleAnimation.m */; };
+		83EC89792AEF989300740AFF /* DGActivityIndicatorNineDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC892C2AEF989200740AFF /* DGActivityIndicatorNineDotsAnimation.m */; };
+		83EC897A2AEF989300740AFF /* DGActivityIndicatorTwoDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC892D2AEF989200740AFF /* DGActivityIndicatorTwoDotsAnimation.m */; };
+		83EC897B2AEF989300740AFF /* DGActivityIndicatorBallRotateAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC892E2AEF989200740AFF /* DGActivityIndicatorBallRotateAnimation.h */; };
+		83EC897C2AEF989300740AFF /* DGActivityIndicatorBallScaleRippleAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC892F2AEF989200740AFF /* DGActivityIndicatorBallScaleRippleAnimation.h */; };
+		83EC897D2AEF989300740AFF /* DGActivityIndicatorBallSpinFadeLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89302AEF989200740AFF /* DGActivityIndicatorBallSpinFadeLoader.m */; };
+		83EC897E2AEF989300740AFF /* DGActivityIndicatorBallZigZagDeflectAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89312AEF989200740AFF /* DGActivityIndicatorBallZigZagDeflectAnimation.m */; };
+		83EC897F2AEF989300740AFF /* DGActivityIndicatorBallScaleMultipleAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89322AEF989200740AFF /* DGActivityIndicatorBallScaleMultipleAnimation.h */; };
+		83EC89802AEF989300740AFF /* DGActivityIndicatorBallBeatAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89332AEF989200740AFF /* DGActivityIndicatorBallBeatAnimation.m */; };
+		83EC89812AEF989300740AFF /* DGActivityIndicatorRotatingSquaresAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89342AEF989200740AFF /* DGActivityIndicatorRotatingSquaresAnimation.h */; };
+		83EC89822AEF989300740AFF /* DGActivityIndicatorLineScalePartyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89352AEF989200740AFF /* DGActivityIndicatorLineScalePartyAnimation.h */; };
+		83EC89832AEF989300740AFF /* DGActivityIndicatorRotatingTrigonAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89362AEF989200740AFF /* DGActivityIndicatorRotatingTrigonAnimation.m */; };
+		83EC89842AEF989300740AFF /* DGActivityIndicatorCookieTerminatorAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89372AEF989200740AFF /* DGActivityIndicatorCookieTerminatorAnimation.h */; };
+		83EC89852AEF989300740AFF /* DGActivityIndicatorBallClipRotateAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89382AEF989200740AFF /* DGActivityIndicatorBallClipRotateAnimation.m */; };
+		83EC89862AEF989300740AFF /* DGActivityIndicatorLineScalePulseOutRapidAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89392AEF989200740AFF /* DGActivityIndicatorLineScalePulseOutRapidAnimation.m */; };
+		83EC89872AEF989300740AFF /* DGActivityIndicatorDoubleBounceAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC893A2AEF989200740AFF /* DGActivityIndicatorDoubleBounceAnimation.h */; };
+		83EC89882AEF989300740AFF /* DGActivityIndicatorLineScalePulseOutAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC893B2AEF989200740AFF /* DGActivityIndicatorLineScalePulseOutAnimation.h */; };
+		83EC89892AEF989300740AFF /* DGActivityIndicatorBallZigZagAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC893C2AEF989200740AFF /* DGActivityIndicatorBallZigZagAnimation.h */; };
+		83EC898A2AEF989300740AFF /* DGActivityIndicatorThreeDotsAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC893D2AEF989200740AFF /* DGActivityIndicatorThreeDotsAnimation.h */; };
+		83EC898B2AEF989300740AFF /* LHYReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC893F2AEF989200740AFF /* LHYReachability.h */; };
+		83EC898C2AEF989300740AFF /* LHYReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89402AEF989200740AFF /* LHYReachability.m */; };
+		83EC898D2AEF989300740AFF /* MYToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89422AEF989200740AFF /* MYToast.h */; };
+		83EC898E2AEF989300740AFF /* MYToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89432AEF989200740AFF /* MYToast.m */; };
+		83EC89B22AEF98AA00740AFF /* Target_CTAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89912AEF98A900740AFF /* Target_CTAppContext.m */; };
+		83EC89B32AEF98AA00740AFF /* FaceStoreService.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89922AEF98A900740AFF /* FaceStoreService.m */; };
+		83EC89B42AEF98AA00740AFF /* APIBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89932AEF98A900740AFF /* APIBaseManager.m */; };
+		83EC89B52AEF98AA00740AFF /* Target_FaceStoreService.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89942AEF98A900740AFF /* Target_FaceStoreService.h */; };
+		83EC89B62AEF98AA00740AFF /* Target_CTAppContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89952AEF98A900740AFF /* Target_CTAppContext.h */; };
+		83EC89B72AEF98AA00740AFF /* APIBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89962AEF98A900740AFF /* APIBaseManager.h */; };
+		83EC89B82AEF98AA00740AFF /* FaceStoreService.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89972AEF98AA00740AFF /* FaceStoreService.h */; };
+		83EC89B92AEF98AA00740AFF /* Target_FaceStoreService.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89982AEF98AA00740AFF /* Target_FaceStoreService.m */; };
+		83EC89BA2AEF98AA00740AFF /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC899A2AEF98AA00740AFF /* BaseModel.m */; };
+		83EC89BB2AEF98AA00740AFF /* BaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC899B2AEF98AA00740AFF /* BaseModel.h */; };
+		83EC89BC2AEF98AA00740AFF /* HYResponseVideoListModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC899D2AEF98AA00740AFF /* HYResponseVideoListModel.h */; };
+		83EC89BD2AEF98AA00740AFF /* HYResponseRecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC899E2AEF98AA00740AFF /* HYResponseRecommendModel.m */; };
+		83EC89BE2AEF98AA00740AFF /* HYResponseSearchModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC899F2AEF98AA00740AFF /* HYResponseSearchModel.h */; };
+		83EC89BF2AEF98AA00740AFF /* HYResponseCategeryModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89A02AEF98AA00740AFF /* HYResponseCategeryModel.h */; };
+		83EC89C02AEF98AA00740AFF /* HYUKResponseNoticeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89A12AEF98AA00740AFF /* HYUKResponseNoticeModel.m */; };
+		83EC89C12AEF98AA00740AFF /* HYUkVideoDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89A22AEF98AA00740AFF /* HYUkVideoDetailModel.m */; };
+		83EC89C22AEF98AA00740AFF /* HYUkTextTempModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89A32AEF98AA00740AFF /* HYUkTextTempModel.m */; };
+		83EC89C32AEF98AA00740AFF /* HYUkTempCategaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89A42AEF98AA00740AFF /* HYUkTempCategaryModel.m */; };
+		83EC89C42AEF98AA00740AFF /* HYResponseVideoListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89A52AEF98AA00740AFF /* HYResponseVideoListModel.m */; };
+		83EC89C52AEF98AA00740AFF /* HYResponseCategeryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89A62AEF98AA00740AFF /* HYResponseCategeryModel.m */; };
+		83EC89C62AEF98AA00740AFF /* HYResponseSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89A72AEF98AA00740AFF /* HYResponseSearchModel.m */; };
+		83EC89C72AEF98AA00740AFF /* HYResponseRecommendModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89A82AEF98AA00740AFF /* HYResponseRecommendModel.h */; };
+		83EC89C82AEF98AA00740AFF /* HYUKResponseNoticeModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89A92AEF98AA00740AFF /* HYUKResponseNoticeModel.h */; };
+		83EC89C92AEF98AA00740AFF /* HYUkTempCategaryModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89AA2AEF98AA00740AFF /* HYUkTempCategaryModel.h */; };
+		83EC89CA2AEF98AA00740AFF /* HYUkTextTempModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89AB2AEF98AA00740AFF /* HYUkTextTempModel.h */; };
+		83EC89CB2AEF98AA00740AFF /* HYUkVideoDetailModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89AC2AEF98AA00740AFF /* HYUkVideoDetailModel.h */; };
+		83EC89CC2AEF98AA00740AFF /* HYVideoSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89AE2AEF98AA00740AFF /* HYVideoSingle.m */; };
+		83EC89CD2AEF98AA00740AFF /* APIString.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89AF2AEF98AA00740AFF /* APIString.m */; };
+		83EC89CE2AEF98AA00740AFF /* HYVideoSingle.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89B02AEF98AA00740AFF /* HYVideoSingle.h */; };
+		83EC89CF2AEF98AA00740AFF /* APIString.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89B12AEF98AA00740AFF /* APIString.h */; };
+		83EC89D42AEF9B8500740AFF /* HYUkShowLoadingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89D02AEF9B8400740AFF /* HYUkShowLoadingManager.h */; };
+		83EC89D52AEF9B8500740AFF /* HYUkBaseListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89D12AEF9B8400740AFF /* HYUkBaseListViewController.h */; };
+		83EC89D62AEF9B8500740AFF /* HYUkShowLoadingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89D22AEF9B8500740AFF /* HYUkShowLoadingManager.m */; };
+		83EC89D72AEF9B8500740AFF /* HYUkBaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89D32AEF9B8500740AFF /* HYUkBaseListViewController.m */; };
+		83EC89E32AEF9BCF00740AFF /* HYVideoDBLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89D92AEF9BCF00740AFF /* HYVideoDBLogic.swift */; };
+		83EC89E42AEF9BCF00740AFF /* HYVideoDataBaseTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89DA2AEF9BCF00740AFF /* HYVideoDataBaseTool.swift */; };
+		83EC89E52AEF9BCF00740AFF /* HYUkHistoryRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89DC2AEF9BCF00740AFF /* HYUkHistoryRecordModel.swift */; };
+		83EC89E62AEF9BCF00740AFF /* HYUkHistoryRecordDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89DD2AEF9BCF00740AFF /* HYUkHistoryRecordDao.swift */; };
+		83EC89E72AEF9BCF00740AFF /* HYUkHistoryRecordLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89DE2AEF9BCF00740AFF /* HYUkHistoryRecordLogic.swift */; };
+		83EC89E82AEF9BCF00740AFF /* HYUkSearchKeyDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89E02AEF9BCF00740AFF /* HYUkSearchKeyDao.swift */; };
+		83EC89E92AEF9BCF00740AFF /* HYUkSearchKeyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89E12AEF9BCF00740AFF /* HYUkSearchKeyModel.swift */; };
+		83EC89EA2AEF9BCF00740AFF /* HYVideoSearchLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89E22AEF9BCF00740AFF /* HYVideoSearchLogic.swift */; };
+		83EC8A342AEFA28200740AFF /* HYUkHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A1B2AEFA28200740AFF /* HYUkHomeViewController.m */; };
+		83EC8A352AEFA28200740AFF /* HYUKRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A1D2AEFA28200740AFF /* HYUKRecommendViewController.m */; };
+		83EC8A362AEFA28200740AFF /* HYUkRecommendHeadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A1F2AEFA28200740AFF /* HYUkRecommendHeadView.h */; };
+		83EC8A372AEFA28200740AFF /* HYUkRecommendHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A202AEFA28200740AFF /* HYUkRecommendHeadView.m */; };
+		83EC8A382AEFA28200740AFF /* HYUKRecommendViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A212AEFA28200740AFF /* HYUKRecommendViewController.h */; };
+		83EC8A392AEFA28200740AFF /* HYUkOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A232AEFA28200740AFF /* HYUkOtherViewController.m */; };
+		83EC8A3A2AEFA28200740AFF /* HYUkOtherViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A242AEFA28200740AFF /* HYUkOtherViewController.h */; };
+		83EC8A3B2AEFA28200740AFF /* HYUkHomeCategeryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A262AEFA28200740AFF /* HYUkHomeCategeryCell.m */; };
+		83EC8A3C2AEFA28200740AFF /* HYUkHomeCategeryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A272AEFA28200740AFF /* HYUkHomeCategeryView.m */; };
+		83EC8A3D2AEFA28200740AFF /* HYUkCategeryListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A282AEFA28200740AFF /* HYUkCategeryListView.m */; };
+		83EC8A3E2AEFA28200740AFF /* HYUkHomeCategeryCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A292AEFA28200740AFF /* HYUkHomeCategeryCell.h */; };
+		83EC8A3F2AEFA28200740AFF /* HYUkCategeryListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A2A2AEFA28200740AFF /* HYUkCategeryListView.h */; };
+		83EC8A402AEFA28200740AFF /* HYUkHomeCategeryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A2B2AEFA28200740AFF /* HYUkHomeCategeryView.h */; };
+		83EC8A412AEFA28200740AFF /* HYUkHomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A2C2AEFA28200740AFF /* HYUkHomeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83EC8A422AEFA28200740AFF /* HYUKHistoryRecodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A2E2AEFA28200740AFF /* HYUKHistoryRecodeView.m */; };
+		83EC8A432AEFA28200740AFF /* HYUkHomeSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A2F2AEFA28200740AFF /* HYUkHomeSearchView.m */; };
+		83EC8A442AEFA28200740AFF /* HYUkVideoHomeListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A302AEFA28200740AFF /* HYUkVideoHomeListCell.m */; };
+		83EC8A452AEFA28200740AFF /* HYUkHomeSearchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A312AEFA28200740AFF /* HYUkHomeSearchView.h */; };
+		83EC8A462AEFA28200740AFF /* HYUKHistoryRecodeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A322AEFA28200740AFF /* HYUKHistoryRecodeView.h */; };
+		83EC8A472AEFA28200740AFF /* HYUkVideoHomeListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A332AEFA28200740AFF /* HYUkVideoHomeListCell.h */; };
+		83EC8A742AEFA36600740AFF /* HYUkSearchViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A4B2AEFA36600740AFF /* HYUkSearchViewController.h */; };
+		83EC8A752AEFA36600740AFF /* HYUkRankViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A4D2AEFA36600740AFF /* HYUkRankViewCell.h */; };
+		83EC8A762AEFA36600740AFF /* HYUkSearchListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A4E2AEFA36600740AFF /* HYUkSearchListView.m */; };
+		83EC8A772AEFA36600740AFF /* HYUkHistoryHeadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A4F2AEFA36600740AFF /* HYUkHistoryHeadView.h */; };
+		83EC8A782AEFA36600740AFF /* HYUkRankClassView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A502AEFA36600740AFF /* HYUkRankClassView.m */; };
+		83EC8A792AEFA36600740AFF /* HYUkSearchHeadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A512AEFA36600740AFF /* HYUkSearchHeadView.h */; };
+		83EC8A7A2AEFA36600740AFF /* HYUkHistoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A522AEFA36600740AFF /* HYUkHistoryView.h */; };
+		83EC8A7B2AEFA36600740AFF /* HYUkRankViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A532AEFA36600740AFF /* HYUkRankViewCell.m */; };
+		83EC8A7C2AEFA36600740AFF /* HYUkHistoryHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A542AEFA36600740AFF /* HYUkHistoryHeadView.m */; };
+		83EC8A7D2AEFA36600740AFF /* HYUkSearchListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A552AEFA36600740AFF /* HYUkSearchListView.h */; };
+		83EC8A7E2AEFA36600740AFF /* HYUkHistoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A562AEFA36600740AFF /* HYUkHistoryView.m */; };
+		83EC8A7F2AEFA36600740AFF /* HYUkSearchHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A572AEFA36600740AFF /* HYUkSearchHeadView.m */; };
+		83EC8A802AEFA36600740AFF /* HYUkRankClassView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A582AEFA36600740AFF /* HYUkRankClassView.h */; };
+		83EC8A812AEFA36600740AFF /* HYUkSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A592AEFA36600740AFF /* HYUkSearchViewController.m */; };
+		83EC8A822AEFA36600740AFF /* HYUkDetailViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A5B2AEFA36600740AFF /* HYUkDetailViewController.h */; };
+		83EC8A832AEFA36600740AFF /* HYUkVideoDetailSelectWorkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A5D2AEFA36600740AFF /* HYUkVideoDetailSelectWorkView.m */; };
+		83EC8A842AEFA36600740AFF /* HYUkVideoBriefDetailView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A5E2AEFA36600740AFF /* HYUkVideoBriefDetailView.h */; };
+		83EC8A852AEFA36600740AFF /* HYUkVideoDetailBriefView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A5F2AEFA36600740AFF /* HYUkVideoDetailBriefView.h */; };
+		83EC8A862AEFA36600740AFF /* HYUkVideoRecommendView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A602AEFA36600740AFF /* HYUkVideoRecommendView.h */; };
+		83EC8A872AEFA36600740AFF /* HYUkVideoPlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A612AEFA36600740AFF /* HYUkVideoPlayView.h */; };
+		83EC8A882AEFA36600740AFF /* HYUkDetailErrorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A622AEFA36600740AFF /* HYUkDetailErrorView.h */; };
+		83EC8A892AEFA36600740AFF /* HYUkDownGatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A632AEFA36600740AFF /* HYUkDownGatherView.m */; };
+		83EC8A8A2AEFA36600740AFF /* HYUkAllGatherListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A642AEFA36600740AFF /* HYUkAllGatherListView.m */; };
+		83EC8A8B2AEFA36600740AFF /* HYUkVideoDetailSelectWorkView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A652AEFA36600740AFF /* HYUkVideoDetailSelectWorkView.h */; };
+		83EC8A8C2AEFA36600740AFF /* HYUkVideoPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A662AEFA36600740AFF /* HYUkVideoPlayView.m */; };
+		83EC8A8D2AEFA36600740AFF /* HYUkVideoRecommendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A672AEFA36600740AFF /* HYUkVideoRecommendView.m */; };
+		83EC8A8E2AEFA36600740AFF /* HYUkVideoDetailBriefView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A682AEFA36600740AFF /* HYUkVideoDetailBriefView.m */; };
+		83EC8A8F2AEFA36600740AFF /* HYUkVideoBriefDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A692AEFA36600740AFF /* HYUkVideoBriefDetailView.m */; };
+		83EC8A902AEFA36600740AFF /* HYUkAllGatherListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A6A2AEFA36600740AFF /* HYUkAllGatherListView.h */; };
+		83EC8A912AEFA36600740AFF /* HYUkDownGatherView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A6B2AEFA36600740AFF /* HYUkDownGatherView.h */; };
+		83EC8A922AEFA36600740AFF /* HYUkDetailErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A6C2AEFA36600740AFF /* HYUkDetailErrorView.m */; };
+		83EC8A932AEFA36600740AFF /* HYUkDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A6D2AEFA36600740AFF /* HYUkDetailViewController.m */; };
+		83EC8A942AEFA36600740AFF /* HYUkCenterHistoryListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A6F2AEFA36600740AFF /* HYUkCenterHistoryListViewController.h */; };
+		83EC8A952AEFA36600740AFF /* HYUkCenterHistoryListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A712AEFA36600740AFF /* HYUkCenterHistoryListCell.h */; };
+		83EC8A962AEFA36600740AFF /* HYUkCenterHistoryListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A722AEFA36600740AFF /* HYUkCenterHistoryListCell.m */; };
+		83EC8A972AEFA36600740AFF /* HYUkCenterHistoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A732AEFA36600740AFF /* HYUkCenterHistoryListViewController.m */; };
+		83EC8A9A2AEFA3B300740AFF /* YXTypeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A982AEFA3B300740AFF /* YXTypeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83EC8A9B2AEFA3B300740AFF /* YXTypeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A992AEFA3B300740AFF /* YXTypeManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01EEBD626F0C5807B309A33F /* Pods-VideoFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoFrame.debug.xcconfig"; path = "Target Support Files/Pods-VideoFrame/Pods-VideoFrame.debug.xcconfig"; sourceTree = "<group>"; };
+		2D03D23586A8742EEC404190 /* Pods_VideoFrame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoFrame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F7AEBCAE3A06CFFD61C922 /* Pods-VideoFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoFrame.release.xcconfig"; path = "Target Support Files/Pods-VideoFrame/Pods-VideoFrame.release.xcconfig"; sourceTree = "<group>"; };
+		83EC88BA2AEF536000740AFF /* VideoFrame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VideoFrame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83EC88BD2AEF536000740AFF /* VideoFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoFrame.h; sourceTree = "<group>"; };
+		83EC88CE2AEF755A00740AFF /* HYUkVideoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkVideoBaseViewController.m; sourceTree = "<group>"; };
+		83EC88CF2AEF755A00740AFF /* HYUkVideoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkVideoBaseViewController.h; sourceTree = "<group>"; };
+		83EC88D22AEF75F100740AFF /* HYUkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkHeader.h; sourceTree = "<group>"; };
+		83EC88D92AEF985800740AFF /* UICollectionView+EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+EmptyView.m"; sourceTree = "<group>"; };
+		83EC88DA2AEF985800740AFF /* HYLocalPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLocalPathManager.m; sourceTree = "<group>"; };
+		83EC88DB2AEF985800740AFF /* UITableView+EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+EmptyView.h"; sourceTree = "<group>"; };
+		83EC88DC2AEF985800740AFF /* HYUkVideoConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkVideoConfigManager.h; sourceTree = "<group>"; };
+		83EC88DD2AEF985800740AFF /* UIImage+uk_bundleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+uk_bundleImage.m"; sourceTree = "<group>"; };
+		83EC88DE2AEF985800740AFF /* UIColor+UkPublicUse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UkPublicUse.m"; sourceTree = "<group>"; };
+		83EC88DF2AEF985800740AFF /* UITableView+EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+EmptyView.m"; sourceTree = "<group>"; };
+		83EC88E02AEF985800740AFF /* HYLocalPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLocalPathManager.h; sourceTree = "<group>"; };
+		83EC88E12AEF985800740AFF /* UICollectionView+EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+EmptyView.h"; sourceTree = "<group>"; };
+		83EC88E22AEF985800740AFF /* UIImage+uk_bundleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+uk_bundleImage.h"; sourceTree = "<group>"; };
+		83EC88E32AEF985800740AFF /* HYUkVideoConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkVideoConfigManager.m; sourceTree = "<group>"; };
+		83EC88E42AEF985800740AFF /* AdaptScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdaptScreen.h; sourceTree = "<group>"; };
+		83EC88E52AEF985800740AFF /* UIColor+UkPublicUse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UkPublicUse.h"; sourceTree = "<group>"; };
+		83EC88F52AEF989100740AFF /* MYDialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYDialogViewController.h; sourceTree = "<group>"; };
+		83EC88F62AEF989100740AFF /* MYDialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYDialogViewController.m; sourceTree = "<group>"; };
+		83EC88F82AEF989200740AFF /* DGActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorView.h; sourceTree = "<group>"; };
+		83EC88F92AEF989200740AFF /* DGActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorView.m; sourceTree = "<group>"; };
+		83EC88FA2AEF989200740AFF /* DGActivityIndicatorAnimationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorAnimationProtocol.h; sourceTree = "<group>"; };
+		83EC88FC2AEF989200740AFF /* DGActivityIndicatorBallClipRotateMultipleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallClipRotateMultipleAnimation.h; sourceTree = "<group>"; };
+		83EC88FD2AEF989200740AFF /* DGActivityIndicatorTriangleSkewSpinAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorTriangleSkewSpinAnimation.m; sourceTree = "<group>"; };
+		83EC88FE2AEF989200740AFF /* DGActivityIndicatorTripleRingsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorTripleRingsAnimation.m; sourceTree = "<group>"; };
+		83EC88FF2AEF989200740AFF /* DGActivityIndicatorBallGridBeatAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallGridBeatAnimation.h; sourceTree = "<group>"; };
+		83EC89002AEF989200740AFF /* DGActivityIndicatorLineScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorLineScaleAnimation.h; sourceTree = "<group>"; };
+		83EC89012AEF989200740AFF /* DGActivityIndicatorTwoDotsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorTwoDotsAnimation.h; sourceTree = "<group>"; };
+		83EC89022AEF989200740AFF /* DGActivityIndicatorNineDotsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorNineDotsAnimation.h; sourceTree = "<group>"; };
+		83EC89032AEF989200740AFF /* DGActivityIndicatorBallScaleRippleMultipleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallScaleRippleMultipleAnimation.h; sourceTree = "<group>"; };
+		83EC89042AEF989200740AFF /* DGActivityIndicatorFiveDotsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorFiveDotsAnimation.h; sourceTree = "<group>"; };
+		83EC89052AEF989200740AFF /* DGActivityIndicatorBallGridPulseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallGridPulseAnimation.m; sourceTree = "<group>"; };
+		83EC89062AEF989200740AFF /* DGActivityIndicatorBallScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallScaleAnimation.h; sourceTree = "<group>"; };
+		83EC89072AEF989200740AFF /* DGActivityIndicatorBallClipRotatePulseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallClipRotatePulseAnimation.m; sourceTree = "<group>"; };
+		83EC89082AEF989200740AFF /* DGActivityIndicatorTriplePulseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorTriplePulseAnimation.m; sourceTree = "<group>"; };
+		83EC89092AEF989200740AFF /* DGActivityIndicatorBallPulseSyncAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallPulseSyncAnimation.h; sourceTree = "<group>"; };
+		83EC890A2AEF989200740AFF /* DGActivityIndicatorBallPulseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallPulseAnimation.h; sourceTree = "<group>"; };
+		83EC890B2AEF989200740AFF /* DGActivityIndicatorRotatingSandglassAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorRotatingSandglassAnimation.h; sourceTree = "<group>"; };
+		83EC890C2AEF989200740AFF /* DGActivityIndicatorBallTrianglePathAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallTrianglePathAnimation.h; sourceTree = "<group>"; };
+		83EC890D2AEF989200740AFF /* DGActivityIndicatorRotatingSquaresAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorRotatingSquaresAnimation.m; sourceTree = "<group>"; };
+		83EC890E2AEF989200740AFF /* DGActivityIndicatorBallBeatAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallBeatAnimation.h; sourceTree = "<group>"; };
+		83EC890F2AEF989200740AFF /* DGActivityIndicatorBallScaleMultipleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallScaleMultipleAnimation.m; sourceTree = "<group>"; };
+		83EC89102AEF989200740AFF /* DGActivityIndicatorBallZigZagDeflectAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallZigZagDeflectAnimation.h; sourceTree = "<group>"; };
+		83EC89112AEF989200740AFF /* DGActivityIndicatorBallSpinFadeLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallSpinFadeLoader.h; sourceTree = "<group>"; };
+		83EC89122AEF989200740AFF /* DGActivityIndicatorBallScaleRippleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallScaleRippleAnimation.m; sourceTree = "<group>"; };
+		83EC89132AEF989200740AFF /* DGActivityIndicatorBallRotateAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallRotateAnimation.m; sourceTree = "<group>"; };
+		83EC89142AEF989200740AFF /* DGActivityIndicatorBallZigZagAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallZigZagAnimation.m; sourceTree = "<group>"; };
+		83EC89152AEF989200740AFF /* DGActivityIndicatorThreeDotsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorThreeDotsAnimation.m; sourceTree = "<group>"; };
+		83EC89162AEF989200740AFF /* DGActivityIndicatorLineScalePulseOutAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorLineScalePulseOutAnimation.m; sourceTree = "<group>"; };
+		83EC89172AEF989200740AFF /* DGActivityIndicatorDoubleBounceAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorDoubleBounceAnimation.m; sourceTree = "<group>"; };
+		83EC89182AEF989200740AFF /* DGActivityIndicatorLineScalePulseOutRapidAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorLineScalePulseOutRapidAnimation.h; sourceTree = "<group>"; };
+		83EC89192AEF989200740AFF /* DGActivityIndicatorBallClipRotateAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallClipRotateAnimation.h; sourceTree = "<group>"; };
+		83EC891A2AEF989200740AFF /* DGActivityIndicatorRotatingTrigonAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorRotatingTrigonAnimation.h; sourceTree = "<group>"; };
+		83EC891B2AEF989200740AFF /* DGActivityIndicatorCookieTerminatorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorCookieTerminatorAnimation.m; sourceTree = "<group>"; };
+		83EC891C2AEF989200740AFF /* DGActivityIndicatorLineScalePartyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorLineScalePartyAnimation.m; sourceTree = "<group>"; };
+		83EC891D2AEF989200740AFF /* DGActivityIndicatorLineScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorLineScaleAnimation.m; sourceTree = "<group>"; };
+		83EC891E2AEF989200740AFF /* DGActivityIndicatorBallGridBeatAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallGridBeatAnimation.m; sourceTree = "<group>"; };
+		83EC891F2AEF989200740AFF /* DGActivityIndicatorTriangleSkewSpinAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorTriangleSkewSpinAnimation.h; sourceTree = "<group>"; };
+		83EC89202AEF989200740AFF /* DGActivityIndicatorBallClipRotateMultipleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallClipRotateMultipleAnimation.m; sourceTree = "<group>"; };
+		83EC89212AEF989200740AFF /* DGActivityIndicatorTripleRingsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorTripleRingsAnimation.h; sourceTree = "<group>"; };
+		83EC89222AEF989200740AFF /* DGActivityIndicatorBallTrianglePathAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallTrianglePathAnimation.m; sourceTree = "<group>"; };
+		83EC89232AEF989200740AFF /* DGActivityIndicatorRotatingSandglassAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorRotatingSandglassAnimation.m; sourceTree = "<group>"; };
+		83EC89242AEF989200740AFF /* DGActivityIndicatorBallPulseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallPulseAnimation.m; sourceTree = "<group>"; };
+		83EC89252AEF989200740AFF /* DGActivityIndicatorBallPulseSyncAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallPulseSyncAnimation.m; sourceTree = "<group>"; };
+		83EC89262AEF989200740AFF /* DGActivityIndicatorTriplePulseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorTriplePulseAnimation.h; sourceTree = "<group>"; };
+		83EC89272AEF989200740AFF /* DGActivityIndicatorBallClipRotatePulseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallClipRotatePulseAnimation.h; sourceTree = "<group>"; };
+		83EC89282AEF989200740AFF /* DGActivityIndicatorBallScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallScaleAnimation.m; sourceTree = "<group>"; };
+		83EC89292AEF989200740AFF /* DGActivityIndicatorFiveDotsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorFiveDotsAnimation.m; sourceTree = "<group>"; };
+		83EC892A2AEF989200740AFF /* DGActivityIndicatorBallGridPulseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallGridPulseAnimation.h; sourceTree = "<group>"; };
+		83EC892B2AEF989200740AFF /* DGActivityIndicatorBallScaleRippleMultipleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallScaleRippleMultipleAnimation.m; sourceTree = "<group>"; };
+		83EC892C2AEF989200740AFF /* DGActivityIndicatorNineDotsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorNineDotsAnimation.m; sourceTree = "<group>"; };
+		83EC892D2AEF989200740AFF /* DGActivityIndicatorTwoDotsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorTwoDotsAnimation.m; sourceTree = "<group>"; };
+		83EC892E2AEF989200740AFF /* DGActivityIndicatorBallRotateAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallRotateAnimation.h; sourceTree = "<group>"; };
+		83EC892F2AEF989200740AFF /* DGActivityIndicatorBallScaleRippleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallScaleRippleAnimation.h; sourceTree = "<group>"; };
+		83EC89302AEF989200740AFF /* DGActivityIndicatorBallSpinFadeLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallSpinFadeLoader.m; sourceTree = "<group>"; };
+		83EC89312AEF989200740AFF /* DGActivityIndicatorBallZigZagDeflectAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallZigZagDeflectAnimation.m; sourceTree = "<group>"; };
+		83EC89322AEF989200740AFF /* DGActivityIndicatorBallScaleMultipleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallScaleMultipleAnimation.h; sourceTree = "<group>"; };
+		83EC89332AEF989200740AFF /* DGActivityIndicatorBallBeatAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallBeatAnimation.m; sourceTree = "<group>"; };
+		83EC89342AEF989200740AFF /* DGActivityIndicatorRotatingSquaresAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorRotatingSquaresAnimation.h; sourceTree = "<group>"; };
+		83EC89352AEF989200740AFF /* DGActivityIndicatorLineScalePartyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorLineScalePartyAnimation.h; sourceTree = "<group>"; };
+		83EC89362AEF989200740AFF /* DGActivityIndicatorRotatingTrigonAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorRotatingTrigonAnimation.m; sourceTree = "<group>"; };
+		83EC89372AEF989200740AFF /* DGActivityIndicatorCookieTerminatorAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorCookieTerminatorAnimation.h; sourceTree = "<group>"; };
+		83EC89382AEF989200740AFF /* DGActivityIndicatorBallClipRotateAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallClipRotateAnimation.m; sourceTree = "<group>"; };
+		83EC89392AEF989200740AFF /* DGActivityIndicatorLineScalePulseOutRapidAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorLineScalePulseOutRapidAnimation.m; sourceTree = "<group>"; };
+		83EC893A2AEF989200740AFF /* DGActivityIndicatorDoubleBounceAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorDoubleBounceAnimation.h; sourceTree = "<group>"; };
+		83EC893B2AEF989200740AFF /* DGActivityIndicatorLineScalePulseOutAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorLineScalePulseOutAnimation.h; sourceTree = "<group>"; };
+		83EC893C2AEF989200740AFF /* DGActivityIndicatorBallZigZagAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallZigZagAnimation.h; sourceTree = "<group>"; };
+		83EC893D2AEF989200740AFF /* DGActivityIndicatorThreeDotsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorThreeDotsAnimation.h; sourceTree = "<group>"; };
+		83EC893F2AEF989200740AFF /* LHYReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHYReachability.h; sourceTree = "<group>"; };
+		83EC89402AEF989200740AFF /* LHYReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHYReachability.m; sourceTree = "<group>"; };
+		83EC89422AEF989200740AFF /* MYToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYToast.h; sourceTree = "<group>"; };
+		83EC89432AEF989200740AFF /* MYToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYToast.m; sourceTree = "<group>"; };
+		83EC89912AEF98A900740AFF /* Target_CTAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_CTAppContext.m; sourceTree = "<group>"; };
+		83EC89922AEF98A900740AFF /* FaceStoreService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceStoreService.m; sourceTree = "<group>"; };
+		83EC89932AEF98A900740AFF /* APIBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIBaseManager.m; sourceTree = "<group>"; };
+		83EC89942AEF98A900740AFF /* Target_FaceStoreService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_FaceStoreService.h; sourceTree = "<group>"; };
+		83EC89952AEF98A900740AFF /* Target_CTAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_CTAppContext.h; sourceTree = "<group>"; };
+		83EC89962AEF98A900740AFF /* APIBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIBaseManager.h; sourceTree = "<group>"; };
+		83EC89972AEF98AA00740AFF /* FaceStoreService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceStoreService.h; sourceTree = "<group>"; };
+		83EC89982AEF98AA00740AFF /* Target_FaceStoreService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_FaceStoreService.m; sourceTree = "<group>"; };
+		83EC899A2AEF98AA00740AFF /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		83EC899B2AEF98AA00740AFF /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		83EC899D2AEF98AA00740AFF /* HYResponseVideoListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYResponseVideoListModel.h; sourceTree = "<group>"; };
+		83EC899E2AEF98AA00740AFF /* HYResponseRecommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYResponseRecommendModel.m; sourceTree = "<group>"; };
+		83EC899F2AEF98AA00740AFF /* HYResponseSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYResponseSearchModel.h; sourceTree = "<group>"; };
+		83EC89A02AEF98AA00740AFF /* HYResponseCategeryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYResponseCategeryModel.h; sourceTree = "<group>"; };
+		83EC89A12AEF98AA00740AFF /* HYUKResponseNoticeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUKResponseNoticeModel.m; sourceTree = "<group>"; };
+		83EC89A22AEF98AA00740AFF /* HYUkVideoDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkVideoDetailModel.m; sourceTree = "<group>"; };
+		83EC89A32AEF98AA00740AFF /* HYUkTextTempModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkTextTempModel.m; sourceTree = "<group>"; };
+		83EC89A42AEF98AA00740AFF /* HYUkTempCategaryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkTempCategaryModel.m; sourceTree = "<group>"; };
+		83EC89A52AEF98AA00740AFF /* HYResponseVideoListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYResponseVideoListModel.m; sourceTree = "<group>"; };
+		83EC89A62AEF98AA00740AFF /* HYResponseCategeryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYResponseCategeryModel.m; sourceTree = "<group>"; };
+		83EC89A72AEF98AA00740AFF /* HYResponseSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYResponseSearchModel.m; sourceTree = "<group>"; };
+		83EC89A82AEF98AA00740AFF /* HYResponseRecommendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYResponseRecommendModel.h; sourceTree = "<group>"; };
+		83EC89A92AEF98AA00740AFF /* HYUKResponseNoticeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUKResponseNoticeModel.h; sourceTree = "<group>"; };
+		83EC89AA2AEF98AA00740AFF /* HYUkTempCategaryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkTempCategaryModel.h; sourceTree = "<group>"; };
+		83EC89AB2AEF98AA00740AFF /* HYUkTextTempModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkTextTempModel.h; sourceTree = "<group>"; };
+		83EC89AC2AEF98AA00740AFF /* HYUkVideoDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkVideoDetailModel.h; sourceTree = "<group>"; };
+		83EC89AE2AEF98AA00740AFF /* HYVideoSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYVideoSingle.m; sourceTree = "<group>"; };
+		83EC89AF2AEF98AA00740AFF /* APIString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIString.m; sourceTree = "<group>"; };
+		83EC89B02AEF98AA00740AFF /* HYVideoSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYVideoSingle.h; sourceTree = "<group>"; };
+		83EC89B12AEF98AA00740AFF /* APIString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIString.h; sourceTree = "<group>"; };
+		83EC89D02AEF9B8400740AFF /* HYUkShowLoadingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkShowLoadingManager.h; sourceTree = "<group>"; };
+		83EC89D12AEF9B8400740AFF /* HYUkBaseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkBaseListViewController.h; sourceTree = "<group>"; };
+		83EC89D22AEF9B8500740AFF /* HYUkShowLoadingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkShowLoadingManager.m; sourceTree = "<group>"; };
+		83EC89D32AEF9B8500740AFF /* HYUkBaseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkBaseListViewController.m; sourceTree = "<group>"; };
+		83EC89D92AEF9BCF00740AFF /* HYVideoDBLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYVideoDBLogic.swift; sourceTree = "<group>"; };
+		83EC89DA2AEF9BCF00740AFF /* HYVideoDataBaseTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYVideoDataBaseTool.swift; sourceTree = "<group>"; };
+		83EC89DC2AEF9BCF00740AFF /* HYUkHistoryRecordModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYUkHistoryRecordModel.swift; sourceTree = "<group>"; };
+		83EC89DD2AEF9BCF00740AFF /* HYUkHistoryRecordDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYUkHistoryRecordDao.swift; sourceTree = "<group>"; };
+		83EC89DE2AEF9BCF00740AFF /* HYUkHistoryRecordLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYUkHistoryRecordLogic.swift; sourceTree = "<group>"; };
+		83EC89E02AEF9BCF00740AFF /* HYUkSearchKeyDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYUkSearchKeyDao.swift; sourceTree = "<group>"; };
+		83EC89E12AEF9BCF00740AFF /* HYUkSearchKeyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYUkSearchKeyModel.swift; sourceTree = "<group>"; };
+		83EC89E22AEF9BCF00740AFF /* HYVideoSearchLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYVideoSearchLogic.swift; sourceTree = "<group>"; };
+		83EC8A1B2AEFA28200740AFF /* HYUkHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkHomeViewController.m; sourceTree = "<group>"; };
+		83EC8A1D2AEFA28200740AFF /* HYUKRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUKRecommendViewController.m; sourceTree = "<group>"; };
+		83EC8A1F2AEFA28200740AFF /* HYUkRecommendHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkRecommendHeadView.h; sourceTree = "<group>"; };
+		83EC8A202AEFA28200740AFF /* HYUkRecommendHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkRecommendHeadView.m; sourceTree = "<group>"; };
+		83EC8A212AEFA28200740AFF /* HYUKRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUKRecommendViewController.h; sourceTree = "<group>"; };
+		83EC8A232AEFA28200740AFF /* HYUkOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkOtherViewController.m; sourceTree = "<group>"; };
+		83EC8A242AEFA28200740AFF /* HYUkOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkOtherViewController.h; sourceTree = "<group>"; };
+		83EC8A262AEFA28200740AFF /* HYUkHomeCategeryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkHomeCategeryCell.m; sourceTree = "<group>"; };
+		83EC8A272AEFA28200740AFF /* HYUkHomeCategeryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkHomeCategeryView.m; sourceTree = "<group>"; };
+		83EC8A282AEFA28200740AFF /* HYUkCategeryListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkCategeryListView.m; sourceTree = "<group>"; };
+		83EC8A292AEFA28200740AFF /* HYUkHomeCategeryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkHomeCategeryCell.h; sourceTree = "<group>"; };
+		83EC8A2A2AEFA28200740AFF /* HYUkCategeryListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkCategeryListView.h; sourceTree = "<group>"; };
+		83EC8A2B2AEFA28200740AFF /* HYUkHomeCategeryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkHomeCategeryView.h; sourceTree = "<group>"; };
+		83EC8A2C2AEFA28200740AFF /* HYUkHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkHomeViewController.h; sourceTree = "<group>"; };
+		83EC8A2E2AEFA28200740AFF /* HYUKHistoryRecodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUKHistoryRecodeView.m; sourceTree = "<group>"; };
+		83EC8A2F2AEFA28200740AFF /* HYUkHomeSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkHomeSearchView.m; sourceTree = "<group>"; };
+		83EC8A302AEFA28200740AFF /* HYUkVideoHomeListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkVideoHomeListCell.m; sourceTree = "<group>"; };
+		83EC8A312AEFA28200740AFF /* HYUkHomeSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkHomeSearchView.h; sourceTree = "<group>"; };
+		83EC8A322AEFA28200740AFF /* HYUKHistoryRecodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUKHistoryRecodeView.h; sourceTree = "<group>"; };
+		83EC8A332AEFA28200740AFF /* HYUkVideoHomeListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkVideoHomeListCell.h; sourceTree = "<group>"; };
+		83EC8A4B2AEFA36600740AFF /* HYUkSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkSearchViewController.h; sourceTree = "<group>"; };
+		83EC8A4D2AEFA36600740AFF /* HYUkRankViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkRankViewCell.h; sourceTree = "<group>"; };
+		83EC8A4E2AEFA36600740AFF /* HYUkSearchListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkSearchListView.m; sourceTree = "<group>"; };
+		83EC8A4F2AEFA36600740AFF /* HYUkHistoryHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkHistoryHeadView.h; sourceTree = "<group>"; };
+		83EC8A502AEFA36600740AFF /* HYUkRankClassView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkRankClassView.m; sourceTree = "<group>"; };
+		83EC8A512AEFA36600740AFF /* HYUkSearchHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkSearchHeadView.h; sourceTree = "<group>"; };
+		83EC8A522AEFA36600740AFF /* HYUkHistoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkHistoryView.h; sourceTree = "<group>"; };
+		83EC8A532AEFA36600740AFF /* HYUkRankViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkRankViewCell.m; sourceTree = "<group>"; };
+		83EC8A542AEFA36600740AFF /* HYUkHistoryHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkHistoryHeadView.m; sourceTree = "<group>"; };
+		83EC8A552AEFA36600740AFF /* HYUkSearchListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkSearchListView.h; sourceTree = "<group>"; };
+		83EC8A562AEFA36600740AFF /* HYUkHistoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkHistoryView.m; sourceTree = "<group>"; };
+		83EC8A572AEFA36600740AFF /* HYUkSearchHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkSearchHeadView.m; sourceTree = "<group>"; };
+		83EC8A582AEFA36600740AFF /* HYUkRankClassView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkRankClassView.h; sourceTree = "<group>"; };
+		83EC8A592AEFA36600740AFF /* HYUkSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkSearchViewController.m; sourceTree = "<group>"; };
+		83EC8A5B2AEFA36600740AFF /* HYUkDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkDetailViewController.h; sourceTree = "<group>"; };
+		83EC8A5D2AEFA36600740AFF /* HYUkVideoDetailSelectWorkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkVideoDetailSelectWorkView.m; sourceTree = "<group>"; };
+		83EC8A5E2AEFA36600740AFF /* HYUkVideoBriefDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkVideoBriefDetailView.h; sourceTree = "<group>"; };
+		83EC8A5F2AEFA36600740AFF /* HYUkVideoDetailBriefView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkVideoDetailBriefView.h; sourceTree = "<group>"; };
+		83EC8A602AEFA36600740AFF /* HYUkVideoRecommendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkVideoRecommendView.h; sourceTree = "<group>"; };
+		83EC8A612AEFA36600740AFF /* HYUkVideoPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkVideoPlayView.h; sourceTree = "<group>"; };
+		83EC8A622AEFA36600740AFF /* HYUkDetailErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkDetailErrorView.h; sourceTree = "<group>"; };
+		83EC8A632AEFA36600740AFF /* HYUkDownGatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkDownGatherView.m; sourceTree = "<group>"; };
+		83EC8A642AEFA36600740AFF /* HYUkAllGatherListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkAllGatherListView.m; sourceTree = "<group>"; };
+		83EC8A652AEFA36600740AFF /* HYUkVideoDetailSelectWorkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkVideoDetailSelectWorkView.h; sourceTree = "<group>"; };
+		83EC8A662AEFA36600740AFF /* HYUkVideoPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkVideoPlayView.m; sourceTree = "<group>"; };
+		83EC8A672AEFA36600740AFF /* HYUkVideoRecommendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkVideoRecommendView.m; sourceTree = "<group>"; };
+		83EC8A682AEFA36600740AFF /* HYUkVideoDetailBriefView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkVideoDetailBriefView.m; sourceTree = "<group>"; };
+		83EC8A692AEFA36600740AFF /* HYUkVideoBriefDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkVideoBriefDetailView.m; sourceTree = "<group>"; };
+		83EC8A6A2AEFA36600740AFF /* HYUkAllGatherListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkAllGatherListView.h; sourceTree = "<group>"; };
+		83EC8A6B2AEFA36600740AFF /* HYUkDownGatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkDownGatherView.h; sourceTree = "<group>"; };
+		83EC8A6C2AEFA36600740AFF /* HYUkDetailErrorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkDetailErrorView.m; sourceTree = "<group>"; };
+		83EC8A6D2AEFA36600740AFF /* HYUkDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkDetailViewController.m; sourceTree = "<group>"; };
+		83EC8A6F2AEFA36600740AFF /* HYUkCenterHistoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkCenterHistoryListViewController.h; sourceTree = "<group>"; };
+		83EC8A712AEFA36600740AFF /* HYUkCenterHistoryListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUkCenterHistoryListCell.h; sourceTree = "<group>"; };
+		83EC8A722AEFA36600740AFF /* HYUkCenterHistoryListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkCenterHistoryListCell.m; sourceTree = "<group>"; };
+		83EC8A732AEFA36600740AFF /* HYUkCenterHistoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkCenterHistoryListViewController.m; sourceTree = "<group>"; };
+		83EC8A982AEFA3B300740AFF /* YXTypeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXTypeManager.h; sourceTree = "<group>"; };
+		83EC8A992AEFA3B300740AFF /* YXTypeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXTypeManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83EC88B72AEF536000740AFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F1984C2ACD88A9865574285 /* Pods_VideoFrame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83EC88B02AEF536000740AFF = {
+			isa = PBXGroup;
+			children = (
+				83EC88BC2AEF536000740AFF /* VideoFrame */,
+				83EC88BB2AEF536000740AFF /* Products */,
+				FD3FDF7FC18CD17C27E040B9 /* Pods */,
+				AE78DA5DAD7B72A555775253 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83EC88BB2AEF536000740AFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83EC88BA2AEF536000740AFF /* VideoFrame.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83EC88BC2AEF536000740AFF /* VideoFrame */ = {
+			isa = PBXGroup;
+			children = (
+				83EC89EB2AEF9CCB00740AFF /* controller */,
+				83EC89D82AEF9BCF00740AFF /* DB */,
+				83EC898F2AEF98A900740AFF /* Api */,
+				83EC88F32AEF988500740AFF /* UIHelper */,
+				83EC88D82AEF985800740AFF /* baseCategory */,
+				83EC88D22AEF75F100740AFF /* HYUkHeader.h */,
+				83EC88CD2AEF754300740AFF /* basevc */,
+				83EC88BD2AEF536000740AFF /* VideoFrame.h */,
+			);
+			path = VideoFrame;
+			sourceTree = "<group>";
+		};
+		83EC88CD2AEF754300740AFF /* basevc */ = {
+			isa = PBXGroup;
+			children = (
+				83EC89D12AEF9B8400740AFF /* HYUkBaseListViewController.h */,
+				83EC89D32AEF9B8500740AFF /* HYUkBaseListViewController.m */,
+				83EC89D02AEF9B8400740AFF /* HYUkShowLoadingManager.h */,
+				83EC89D22AEF9B8500740AFF /* HYUkShowLoadingManager.m */,
+				83EC88CF2AEF755A00740AFF /* HYUkVideoBaseViewController.h */,
+				83EC88CE2AEF755A00740AFF /* HYUkVideoBaseViewController.m */,
+			);
+			path = basevc;
+			sourceTree = "<group>";
+		};
+		83EC88D82AEF985800740AFF /* baseCategory */ = {
+			isa = PBXGroup;
+			children = (
+				83EC8A982AEFA3B300740AFF /* YXTypeManager.h */,
+				83EC8A992AEFA3B300740AFF /* YXTypeManager.m */,
+				83EC88E42AEF985800740AFF /* AdaptScreen.h */,
+				83EC88E02AEF985800740AFF /* HYLocalPathManager.h */,
+				83EC88DA2AEF985800740AFF /* HYLocalPathManager.m */,
+				83EC88DC2AEF985800740AFF /* HYUkVideoConfigManager.h */,
+				83EC88E32AEF985800740AFF /* HYUkVideoConfigManager.m */,
+				83EC88E12AEF985800740AFF /* UICollectionView+EmptyView.h */,
+				83EC88D92AEF985800740AFF /* UICollectionView+EmptyView.m */,
+				83EC88E52AEF985800740AFF /* UIColor+UkPublicUse.h */,
+				83EC88DE2AEF985800740AFF /* UIColor+UkPublicUse.m */,
+				83EC88E22AEF985800740AFF /* UIImage+uk_bundleImage.h */,
+				83EC88DD2AEF985800740AFF /* UIImage+uk_bundleImage.m */,
+				83EC88DB2AEF985800740AFF /* UITableView+EmptyView.h */,
+				83EC88DF2AEF985800740AFF /* UITableView+EmptyView.m */,
+			);
+			path = baseCategory;
+			sourceTree = "<group>";
+		};
+		83EC88F32AEF988500740AFF /* UIHelper */ = {
+			isa = PBXGroup;
+			children = (
+				83EC88F72AEF989200740AFF /* DGActivityIndicatorView */,
+				83EC88F42AEF989100740AFF /* DialogViewController */,
+				83EC89412AEF989200740AFF /* MYToast */,
+				83EC893E2AEF989200740AFF /* Reachability */,
+			);
+			path = UIHelper;
+			sourceTree = "<group>";
+		};
+		83EC88F42AEF989100740AFF /* DialogViewController */ = {
+			isa = PBXGroup;
+			children = (
+				83EC88F52AEF989100740AFF /* MYDialogViewController.h */,
+				83EC88F62AEF989100740AFF /* MYDialogViewController.m */,
+			);
+			path = DialogViewController;
+			sourceTree = "<group>";
+		};
+		83EC88F72AEF989200740AFF /* DGActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				83EC88F82AEF989200740AFF /* DGActivityIndicatorView.h */,
+				83EC88F92AEF989200740AFF /* DGActivityIndicatorView.m */,
+				83EC88FA2AEF989200740AFF /* DGActivityIndicatorAnimationProtocol.h */,
+				83EC88FB2AEF989200740AFF /* Animations */,
+			);
+			path = DGActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		83EC88FB2AEF989200740AFF /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				83EC88FC2AEF989200740AFF /* DGActivityIndicatorBallClipRotateMultipleAnimation.h */,
+				83EC88FD2AEF989200740AFF /* DGActivityIndicatorTriangleSkewSpinAnimation.m */,
+				83EC88FE2AEF989200740AFF /* DGActivityIndicatorTripleRingsAnimation.m */,
+				83EC88FF2AEF989200740AFF /* DGActivityIndicatorBallGridBeatAnimation.h */,
+				83EC89002AEF989200740AFF /* DGActivityIndicatorLineScaleAnimation.h */,
+				83EC89012AEF989200740AFF /* DGActivityIndicatorTwoDotsAnimation.h */,
+				83EC89022AEF989200740AFF /* DGActivityIndicatorNineDotsAnimation.h */,
+				83EC89032AEF989200740AFF /* DGActivityIndicatorBallScaleRippleMultipleAnimation.h */,
+				83EC89042AEF989200740AFF /* DGActivityIndicatorFiveDotsAnimation.h */,
+				83EC89052AEF989200740AFF /* DGActivityIndicatorBallGridPulseAnimation.m */,
+				83EC89062AEF989200740AFF /* DGActivityIndicatorBallScaleAnimation.h */,
+				83EC89072AEF989200740AFF /* DGActivityIndicatorBallClipRotatePulseAnimation.m */,
+				83EC89082AEF989200740AFF /* DGActivityIndicatorTriplePulseAnimation.m */,
+				83EC89092AEF989200740AFF /* DGActivityIndicatorBallPulseSyncAnimation.h */,
+				83EC890A2AEF989200740AFF /* DGActivityIndicatorBallPulseAnimation.h */,
+				83EC890B2AEF989200740AFF /* DGActivityIndicatorRotatingSandglassAnimation.h */,
+				83EC890C2AEF989200740AFF /* DGActivityIndicatorBallTrianglePathAnimation.h */,
+				83EC890D2AEF989200740AFF /* DGActivityIndicatorRotatingSquaresAnimation.m */,
+				83EC890E2AEF989200740AFF /* DGActivityIndicatorBallBeatAnimation.h */,
+				83EC890F2AEF989200740AFF /* DGActivityIndicatorBallScaleMultipleAnimation.m */,
+				83EC89102AEF989200740AFF /* DGActivityIndicatorBallZigZagDeflectAnimation.h */,
+				83EC89112AEF989200740AFF /* DGActivityIndicatorBallSpinFadeLoader.h */,
+				83EC89122AEF989200740AFF /* DGActivityIndicatorBallScaleRippleAnimation.m */,
+				83EC89132AEF989200740AFF /* DGActivityIndicatorBallRotateAnimation.m */,
+				83EC89142AEF989200740AFF /* DGActivityIndicatorBallZigZagAnimation.m */,
+				83EC89152AEF989200740AFF /* DGActivityIndicatorThreeDotsAnimation.m */,
+				83EC89162AEF989200740AFF /* DGActivityIndicatorLineScalePulseOutAnimation.m */,
+				83EC89172AEF989200740AFF /* DGActivityIndicatorDoubleBounceAnimation.m */,
+				83EC89182AEF989200740AFF /* DGActivityIndicatorLineScalePulseOutRapidAnimation.h */,
+				83EC89192AEF989200740AFF /* DGActivityIndicatorBallClipRotateAnimation.h */,
+				83EC891A2AEF989200740AFF /* DGActivityIndicatorRotatingTrigonAnimation.h */,
+				83EC891B2AEF989200740AFF /* DGActivityIndicatorCookieTerminatorAnimation.m */,
+				83EC891C2AEF989200740AFF /* DGActivityIndicatorLineScalePartyAnimation.m */,
+				83EC891D2AEF989200740AFF /* DGActivityIndicatorLineScaleAnimation.m */,
+				83EC891E2AEF989200740AFF /* DGActivityIndicatorBallGridBeatAnimation.m */,
+				83EC891F2AEF989200740AFF /* DGActivityIndicatorTriangleSkewSpinAnimation.h */,
+				83EC89202AEF989200740AFF /* DGActivityIndicatorBallClipRotateMultipleAnimation.m */,
+				83EC89212AEF989200740AFF /* DGActivityIndicatorTripleRingsAnimation.h */,
+				83EC89222AEF989200740AFF /* DGActivityIndicatorBallTrianglePathAnimation.m */,
+				83EC89232AEF989200740AFF /* DGActivityIndicatorRotatingSandglassAnimation.m */,
+				83EC89242AEF989200740AFF /* DGActivityIndicatorBallPulseAnimation.m */,
+				83EC89252AEF989200740AFF /* DGActivityIndicatorBallPulseSyncAnimation.m */,
+				83EC89262AEF989200740AFF /* DGActivityIndicatorTriplePulseAnimation.h */,
+				83EC89272AEF989200740AFF /* DGActivityIndicatorBallClipRotatePulseAnimation.h */,
+				83EC89282AEF989200740AFF /* DGActivityIndicatorBallScaleAnimation.m */,
+				83EC89292AEF989200740AFF /* DGActivityIndicatorFiveDotsAnimation.m */,
+				83EC892A2AEF989200740AFF /* DGActivityIndicatorBallGridPulseAnimation.h */,
+				83EC892B2AEF989200740AFF /* DGActivityIndicatorBallScaleRippleMultipleAnimation.m */,
+				83EC892C2AEF989200740AFF /* DGActivityIndicatorNineDotsAnimation.m */,
+				83EC892D2AEF989200740AFF /* DGActivityIndicatorTwoDotsAnimation.m */,
+				83EC892E2AEF989200740AFF /* DGActivityIndicatorBallRotateAnimation.h */,
+				83EC892F2AEF989200740AFF /* DGActivityIndicatorBallScaleRippleAnimation.h */,
+				83EC89302AEF989200740AFF /* DGActivityIndicatorBallSpinFadeLoader.m */,
+				83EC89312AEF989200740AFF /* DGActivityIndicatorBallZigZagDeflectAnimation.m */,
+				83EC89322AEF989200740AFF /* DGActivityIndicatorBallScaleMultipleAnimation.h */,
+				83EC89332AEF989200740AFF /* DGActivityIndicatorBallBeatAnimation.m */,
+				83EC89342AEF989200740AFF /* DGActivityIndicatorRotatingSquaresAnimation.h */,
+				83EC89352AEF989200740AFF /* DGActivityIndicatorLineScalePartyAnimation.h */,
+				83EC89362AEF989200740AFF /* DGActivityIndicatorRotatingTrigonAnimation.m */,
+				83EC89372AEF989200740AFF /* DGActivityIndicatorCookieTerminatorAnimation.h */,
+				83EC89382AEF989200740AFF /* DGActivityIndicatorBallClipRotateAnimation.m */,
+				83EC89392AEF989200740AFF /* DGActivityIndicatorLineScalePulseOutRapidAnimation.m */,
+				83EC893A2AEF989200740AFF /* DGActivityIndicatorDoubleBounceAnimation.h */,
+				83EC893B2AEF989200740AFF /* DGActivityIndicatorLineScalePulseOutAnimation.h */,
+				83EC893C2AEF989200740AFF /* DGActivityIndicatorBallZigZagAnimation.h */,
+				83EC893D2AEF989200740AFF /* DGActivityIndicatorThreeDotsAnimation.h */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		83EC893E2AEF989200740AFF /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				83EC893F2AEF989200740AFF /* LHYReachability.h */,
+				83EC89402AEF989200740AFF /* LHYReachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		83EC89412AEF989200740AFF /* MYToast */ = {
+			isa = PBXGroup;
+			children = (
+				83EC89422AEF989200740AFF /* MYToast.h */,
+				83EC89432AEF989200740AFF /* MYToast.m */,
+			);
+			path = MYToast;
+			sourceTree = "<group>";
+		};
+		83EC898F2AEF98A900740AFF /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				83EC89902AEF98A900740AFF /* AFNetManager */,
+				83EC89992AEF98AA00740AFF /* Models */,
+				83EC899C2AEF98AA00740AFF /* responseModel */,
+				83EC89AD2AEF98AA00740AFF /* Api */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		83EC89902AEF98A900740AFF /* AFNetManager */ = {
+			isa = PBXGroup;
+			children = (
+				83EC89912AEF98A900740AFF /* Target_CTAppContext.m */,
+				83EC89922AEF98A900740AFF /* FaceStoreService.m */,
+				83EC89932AEF98A900740AFF /* APIBaseManager.m */,
+				83EC89942AEF98A900740AFF /* Target_FaceStoreService.h */,
+				83EC89952AEF98A900740AFF /* Target_CTAppContext.h */,
+				83EC89962AEF98A900740AFF /* APIBaseManager.h */,
+				83EC89972AEF98AA00740AFF /* FaceStoreService.h */,
+				83EC89982AEF98AA00740AFF /* Target_FaceStoreService.m */,
+			);
+			path = AFNetManager;
+			sourceTree = "<group>";
+		};
+		83EC89992AEF98AA00740AFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83EC899B2AEF98AA00740AFF /* BaseModel.h */,
+				83EC899A2AEF98AA00740AFF /* BaseModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83EC899C2AEF98AA00740AFF /* responseModel */ = {
+			isa = PBXGroup;
+			children = (
+				83EC89A02AEF98AA00740AFF /* HYResponseCategeryModel.h */,
+				83EC89A62AEF98AA00740AFF /* HYResponseCategeryModel.m */,
+				83EC89A82AEF98AA00740AFF /* HYResponseRecommendModel.h */,
+				83EC899E2AEF98AA00740AFF /* HYResponseRecommendModel.m */,
+				83EC899F2AEF98AA00740AFF /* HYResponseSearchModel.h */,
+				83EC89A72AEF98AA00740AFF /* HYResponseSearchModel.m */,
+				83EC899D2AEF98AA00740AFF /* HYResponseVideoListModel.h */,
+				83EC89A52AEF98AA00740AFF /* HYResponseVideoListModel.m */,
+				83EC89A92AEF98AA00740AFF /* HYUKResponseNoticeModel.h */,
+				83EC89A12AEF98AA00740AFF /* HYUKResponseNoticeModel.m */,
+				83EC89AA2AEF98AA00740AFF /* HYUkTempCategaryModel.h */,
+				83EC89A42AEF98AA00740AFF /* HYUkTempCategaryModel.m */,
+				83EC89AB2AEF98AA00740AFF /* HYUkTextTempModel.h */,
+				83EC89A32AEF98AA00740AFF /* HYUkTextTempModel.m */,
+				83EC89AC2AEF98AA00740AFF /* HYUkVideoDetailModel.h */,
+				83EC89A22AEF98AA00740AFF /* HYUkVideoDetailModel.m */,
+			);
+			path = responseModel;
+			sourceTree = "<group>";
+		};
+		83EC89AD2AEF98AA00740AFF /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				83EC89B12AEF98AA00740AFF /* APIString.h */,
+				83EC89AF2AEF98AA00740AFF /* APIString.m */,
+				83EC89B02AEF98AA00740AFF /* HYVideoSingle.h */,
+				83EC89AE2AEF98AA00740AFF /* HYVideoSingle.m */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		83EC89D82AEF9BCF00740AFF /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				83EC89D92AEF9BCF00740AFF /* HYVideoDBLogic.swift */,
+				83EC89DA2AEF9BCF00740AFF /* HYVideoDataBaseTool.swift */,
+				83EC89DB2AEF9BCF00740AFF /* historyRecord */,
+				83EC89DF2AEF9BCF00740AFF /* searchKey */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		83EC89DB2AEF9BCF00740AFF /* historyRecord */ = {
+			isa = PBXGroup;
+			children = (
+				83EC89DC2AEF9BCF00740AFF /* HYUkHistoryRecordModel.swift */,
+				83EC89DD2AEF9BCF00740AFF /* HYUkHistoryRecordDao.swift */,
+				83EC89DE2AEF9BCF00740AFF /* HYUkHistoryRecordLogic.swift */,
+			);
+			path = historyRecord;
+			sourceTree = "<group>";
+		};
+		83EC89DF2AEF9BCF00740AFF /* searchKey */ = {
+			isa = PBXGroup;
+			children = (
+				83EC89E02AEF9BCF00740AFF /* HYUkSearchKeyDao.swift */,
+				83EC89E12AEF9BCF00740AFF /* HYUkSearchKeyModel.swift */,
+				83EC89E22AEF9BCF00740AFF /* HYVideoSearchLogic.swift */,
+			);
+			path = searchKey;
+			sourceTree = "<group>";
+		};
+		83EC89EB2AEF9CCB00740AFF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				83EC8A5A2AEFA36600740AFF /* detail */,
+				83EC8A6E2AEFA36600740AFF /* history */,
+				83EC8A4A2AEFA36600740AFF /* search */,
+				83EC8A1A2AEFA28200740AFF /* home */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		83EC8A1A2AEFA28200740AFF /* home */ = {
+			isa = PBXGroup;
+			children = (
+				83EC8A2C2AEFA28200740AFF /* HYUkHomeViewController.h */,
+				83EC8A1B2AEFA28200740AFF /* HYUkHomeViewController.m */,
+				83EC8A222AEFA28200740AFF /* other */,
+				83EC8A1C2AEFA28200740AFF /* recommend */,
+				83EC8A2D2AEFA28200740AFF /* view */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		83EC8A1C2AEFA28200740AFF /* recommend */ = {
+			isa = PBXGroup;
+			children = (
+				83EC8A212AEFA28200740AFF /* HYUKRecommendViewController.h */,
+				83EC8A1D2AEFA28200740AFF /* HYUKRecommendViewController.m */,
+				83EC8A1E2AEFA28200740AFF /* view */,
+			);
+			path = recommend;
+			sourceTree = "<group>";
+		};
+		83EC8A1E2AEFA28200740AFF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				83EC8A1F2AEFA28200740AFF /* HYUkRecommendHeadView.h */,
+				83EC8A202AEFA28200740AFF /* HYUkRecommendHeadView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		83EC8A222AEFA28200740AFF /* other */ = {
+			isa = PBXGroup;
+			children = (
+				83EC8A242AEFA28200740AFF /* HYUkOtherViewController.h */,
+				83EC8A232AEFA28200740AFF /* HYUkOtherViewController.m */,
+				83EC8A252AEFA28200740AFF /* view */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		83EC8A252AEFA28200740AFF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				83EC8A2A2AEFA28200740AFF /* HYUkCategeryListView.h */,
+				83EC8A282AEFA28200740AFF /* HYUkCategeryListView.m */,
+				83EC8A292AEFA28200740AFF /* HYUkHomeCategeryCell.h */,
+				83EC8A262AEFA28200740AFF /* HYUkHomeCategeryCell.m */,
+				83EC8A2B2AEFA28200740AFF /* HYUkHomeCategeryView.h */,
+				83EC8A272AEFA28200740AFF /* HYUkHomeCategeryView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		83EC8A2D2AEFA28200740AFF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				83EC8A322AEFA28200740AFF /* HYUKHistoryRecodeView.h */,
+				83EC8A2E2AEFA28200740AFF /* HYUKHistoryRecodeView.m */,
+				83EC8A312AEFA28200740AFF /* HYUkHomeSearchView.h */,
+				83EC8A2F2AEFA28200740AFF /* HYUkHomeSearchView.m */,
+				83EC8A332AEFA28200740AFF /* HYUkVideoHomeListCell.h */,
+				83EC8A302AEFA28200740AFF /* HYUkVideoHomeListCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		83EC8A4A2AEFA36600740AFF /* search */ = {
+			isa = PBXGroup;
+			children = (
+				83EC8A4B2AEFA36600740AFF /* HYUkSearchViewController.h */,
+				83EC8A592AEFA36600740AFF /* HYUkSearchViewController.m */,
+				83EC8A4C2AEFA36600740AFF /* view */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		83EC8A4C2AEFA36600740AFF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				83EC8A4F2AEFA36600740AFF /* HYUkHistoryHeadView.h */,
+				83EC8A542AEFA36600740AFF /* HYUkHistoryHeadView.m */,
+				83EC8A522AEFA36600740AFF /* HYUkHistoryView.h */,
+				83EC8A562AEFA36600740AFF /* HYUkHistoryView.m */,
+				83EC8A582AEFA36600740AFF /* HYUkRankClassView.h */,
+				83EC8A502AEFA36600740AFF /* HYUkRankClassView.m */,
+				83EC8A4D2AEFA36600740AFF /* HYUkRankViewCell.h */,
+				83EC8A532AEFA36600740AFF /* HYUkRankViewCell.m */,
+				83EC8A512AEFA36600740AFF /* HYUkSearchHeadView.h */,
+				83EC8A572AEFA36600740AFF /* HYUkSearchHeadView.m */,
+				83EC8A552AEFA36600740AFF /* HYUkSearchListView.h */,
+				83EC8A4E2AEFA36600740AFF /* HYUkSearchListView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		83EC8A5A2AEFA36600740AFF /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				83EC8A5B2AEFA36600740AFF /* HYUkDetailViewController.h */,
+				83EC8A6D2AEFA36600740AFF /* HYUkDetailViewController.m */,
+				83EC8A5C2AEFA36600740AFF /* view */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		83EC8A5C2AEFA36600740AFF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				83EC8A6A2AEFA36600740AFF /* HYUkAllGatherListView.h */,
+				83EC8A642AEFA36600740AFF /* HYUkAllGatherListView.m */,
+				83EC8A622AEFA36600740AFF /* HYUkDetailErrorView.h */,
+				83EC8A6C2AEFA36600740AFF /* HYUkDetailErrorView.m */,
+				83EC8A6B2AEFA36600740AFF /* HYUkDownGatherView.h */,
+				83EC8A632AEFA36600740AFF /* HYUkDownGatherView.m */,
+				83EC8A5E2AEFA36600740AFF /* HYUkVideoBriefDetailView.h */,
+				83EC8A692AEFA36600740AFF /* HYUkVideoBriefDetailView.m */,
+				83EC8A5F2AEFA36600740AFF /* HYUkVideoDetailBriefView.h */,
+				83EC8A682AEFA36600740AFF /* HYUkVideoDetailBriefView.m */,
+				83EC8A652AEFA36600740AFF /* HYUkVideoDetailSelectWorkView.h */,
+				83EC8A5D2AEFA36600740AFF /* HYUkVideoDetailSelectWorkView.m */,
+				83EC8A612AEFA36600740AFF /* HYUkVideoPlayView.h */,
+				83EC8A662AEFA36600740AFF /* HYUkVideoPlayView.m */,
+				83EC8A602AEFA36600740AFF /* HYUkVideoRecommendView.h */,
+				83EC8A672AEFA36600740AFF /* HYUkVideoRecommendView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		83EC8A6E2AEFA36600740AFF /* history */ = {
+			isa = PBXGroup;
+			children = (
+				83EC8A6F2AEFA36600740AFF /* HYUkCenterHistoryListViewController.h */,
+				83EC8A732AEFA36600740AFF /* HYUkCenterHistoryListViewController.m */,
+				83EC8A702AEFA36600740AFF /* view */,
+			);
+			path = history;
+			sourceTree = "<group>";
+		};
+		83EC8A702AEFA36600740AFF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				83EC8A712AEFA36600740AFF /* HYUkCenterHistoryListCell.h */,
+				83EC8A722AEFA36600740AFF /* HYUkCenterHistoryListCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AE78DA5DAD7B72A555775253 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D03D23586A8742EEC404190 /* Pods_VideoFrame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD3FDF7FC18CD17C27E040B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01EEBD626F0C5807B309A33F /* Pods-VideoFrame.debug.xcconfig */,
+				44F7AEBCAE3A06CFFD61C922 /* Pods-VideoFrame.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		83EC88B52AEF536000740AFF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83EC8A412AEFA28200740AFF /* HYUkHomeViewController.h in Headers */,
+				83EC8A9A2AEFA3B300740AFF /* YXTypeManager.h in Headers */,
+				83EC88E92AEF985800740AFF /* HYUkVideoConfigManager.h in Headers */,
+				83EC88ED2AEF985800740AFF /* HYLocalPathManager.h in Headers */,
+				83EC8A382AEFA28200740AFF /* HYUKRecommendViewController.h in Headers */,
+				83EC89BE2AEF98AA00740AFF /* HYResponseSearchModel.h in Headers */,
+				83EC8A752AEFA36600740AFF /* HYUkRankViewCell.h in Headers */,
+				83EC89842AEF989300740AFF /* DGActivityIndicatorCookieTerminatorAnimation.h in Headers */,
+				83EC89532AEF989300740AFF /* DGActivityIndicatorBallScaleAnimation.h in Headers */,
+				83EC897B2AEF989300740AFF /* DGActivityIndicatorBallRotateAnimation.h in Headers */,
+				83EC89C82AEF98AA00740AFF /* HYUKResponseNoticeModel.h in Headers */,
+				83EC8A452AEFA28200740AFF /* HYUkHomeSearchView.h in Headers */,
+				83EC8A362AEFA28200740AFF /* HYUkRecommendHeadView.h in Headers */,
+				83EC8A822AEFA36600740AFF /* HYUkDetailViewController.h in Headers */,
+				83EC89482AEF989200740AFF /* DGActivityIndicatorAnimationProtocol.h in Headers */,
+				83EC8A462AEFA28200740AFF /* HYUKHistoryRecodeView.h in Headers */,
+				83EC896C2AEF989300740AFF /* DGActivityIndicatorTriangleSkewSpinAnimation.h in Headers */,
+				83EC894D2AEF989200740AFF /* DGActivityIndicatorLineScaleAnimation.h in Headers */,
+				83EC894C2AEF989200740AFF /* DGActivityIndicatorBallGridBeatAnimation.h in Headers */,
+				83EC88EE2AEF985800740AFF /* UICollectionView+EmptyView.h in Headers */,
+				83EC89572AEF989300740AFF /* DGActivityIndicatorBallPulseAnimation.h in Headers */,
+				83EC89772AEF989300740AFF /* DGActivityIndicatorBallGridPulseAnimation.h in Headers */,
+				83EC8A882AEFA36600740AFF /* HYUkDetailErrorView.h in Headers */,
+				83EC8A742AEFA36600740AFF /* HYUkSearchViewController.h in Headers */,
+				83EC89512AEF989200740AFF /* DGActivityIndicatorFiveDotsAnimation.h in Headers */,
+				83EC89BC2AEF98AA00740AFF /* HYResponseVideoListModel.h in Headers */,
+				83EC89C72AEF98AA00740AFF /* HYResponseRecommendModel.h in Headers */,
+				83EC88BE2AEF536000740AFF /* VideoFrame.h in Headers */,
+				83EC8A912AEFA36600740AFF /* HYUkDownGatherView.h in Headers */,
+				83EC89CF2AEF98AA00740AFF /* APIString.h in Headers */,
+				83EC89812AEF989300740AFF /* DGActivityIndicatorRotatingSquaresAnimation.h in Headers */,
+				83EC88F22AEF985800740AFF /* UIColor+UkPublicUse.h in Headers */,
+				83EC89732AEF989300740AFF /* DGActivityIndicatorTriplePulseAnimation.h in Headers */,
+				83EC8A862AEFA36600740AFF /* HYUkVideoRecommendView.h in Headers */,
+				83EC8A3E2AEFA28200740AFF /* HYUkHomeCategeryCell.h in Headers */,
+				83EC89B62AEF98AA00740AFF /* Target_CTAppContext.h in Headers */,
+				83EC8A7D2AEFA36600740AFF /* HYUkSearchListView.h in Headers */,
+				83EC898D2AEF989300740AFF /* MYToast.h in Headers */,
+				83EC894F2AEF989200740AFF /* DGActivityIndicatorNineDotsAnimation.h in Headers */,
+				83EC8A402AEFA28200740AFF /* HYUkHomeCategeryView.h in Headers */,
+				83EC8A472AEFA28200740AFF /* HYUkVideoHomeListCell.h in Headers */,
+				83EC895B2AEF989300740AFF /* DGActivityIndicatorBallBeatAnimation.h in Headers */,
+				83EC89CB2AEF98AA00740AFF /* HYUkVideoDetailModel.h in Headers */,
+				83EC89822AEF989300740AFF /* DGActivityIndicatorLineScalePartyAnimation.h in Headers */,
+				83EC8A942AEFA36600740AFF /* HYUkCenterHistoryListViewController.h in Headers */,
+				83EC89CE2AEF98AA00740AFF /* HYVideoSingle.h in Headers */,
+				83EC89742AEF989300740AFF /* DGActivityIndicatorBallClipRotatePulseAnimation.h in Headers */,
+				83EC89BB2AEF98AA00740AFF /* BaseModel.h in Headers */,
+				83EC8A3F2AEFA28200740AFF /* HYUkCategeryListView.h in Headers */,
+				83EC898B2AEF989300740AFF /* LHYReachability.h in Headers */,
+				83EC89562AEF989300740AFF /* DGActivityIndicatorBallPulseSyncAnimation.h in Headers */,
+				83EC89CA2AEF98AA00740AFF /* HYUkTextTempModel.h in Headers */,
+				83EC89442AEF989200740AFF /* MYDialogViewController.h in Headers */,
+				83EC8A852AEFA36600740AFF /* HYUkVideoDetailBriefView.h in Headers */,
+				83EC894E2AEF989200740AFF /* DGActivityIndicatorTwoDotsAnimation.h in Headers */,
+				83EC88D32AEF75F100740AFF /* HYUkHeader.h in Headers */,
+				83EC89462AEF989200740AFF /* DGActivityIndicatorView.h in Headers */,
+				83EC89892AEF989300740AFF /* DGActivityIndicatorBallZigZagAnimation.h in Headers */,
+				83EC88D12AEF755A00740AFF /* HYUkVideoBaseViewController.h in Headers */,
+				83EC89672AEF989300740AFF /* DGActivityIndicatorRotatingTrigonAnimation.h in Headers */,
+				83EC8A772AEFA36600740AFF /* HYUkHistoryHeadView.h in Headers */,
+				83EC89D42AEF9B8500740AFF /* HYUkShowLoadingManager.h in Headers */,
+				83EC8A8B2AEFA36600740AFF /* HYUkVideoDetailSelectWorkView.h in Headers */,
+				83EC8A7A2AEFA36600740AFF /* HYUkHistoryView.h in Headers */,
+				83EC8A952AEFA36600740AFF /* HYUkCenterHistoryListCell.h in Headers */,
+				83EC89582AEF989300740AFF /* DGActivityIndicatorRotatingSandglassAnimation.h in Headers */,
+				83EC898A2AEF989300740AFF /* DGActivityIndicatorThreeDotsAnimation.h in Headers */,
+				83EC89592AEF989300740AFF /* DGActivityIndicatorBallTrianglePathAnimation.h in Headers */,
+				83EC88EF2AEF985800740AFF /* UIImage+uk_bundleImage.h in Headers */,
+				83EC89652AEF989300740AFF /* DGActivityIndicatorLineScalePulseOutRapidAnimation.h in Headers */,
+				83EC89B82AEF98AA00740AFF /* FaceStoreService.h in Headers */,
+				83EC897F2AEF989300740AFF /* DGActivityIndicatorBallScaleMultipleAnimation.h in Headers */,
+				83EC89D52AEF9B8500740AFF /* HYUkBaseListViewController.h in Headers */,
+				83EC897C2AEF989300740AFF /* DGActivityIndicatorBallScaleRippleAnimation.h in Headers */,
+				83EC895E2AEF989300740AFF /* DGActivityIndicatorBallSpinFadeLoader.h in Headers */,
+				83EC8A902AEFA36600740AFF /* HYUkAllGatherListView.h in Headers */,
+				83EC89BF2AEF98AA00740AFF /* HYResponseCategeryModel.h in Headers */,
+				83EC8A802AEFA36600740AFF /* HYUkRankClassView.h in Headers */,
+				83EC89492AEF989200740AFF /* DGActivityIndicatorBallClipRotateMultipleAnimation.h in Headers */,
+				83EC8A842AEFA36600740AFF /* HYUkVideoBriefDetailView.h in Headers */,
+				83EC8A792AEFA36600740AFF /* HYUkSearchHeadView.h in Headers */,
+				83EC8A872AEFA36600740AFF /* HYUkVideoPlayView.h in Headers */,
+				83EC89B52AEF98AA00740AFF /* Target_FaceStoreService.h in Headers */,
+				83EC8A3A2AEFA28200740AFF /* HYUkOtherViewController.h in Headers */,
+				83EC89662AEF989300740AFF /* DGActivityIndicatorBallClipRotateAnimation.h in Headers */,
+				83EC89502AEF989200740AFF /* DGActivityIndicatorBallScaleRippleMultipleAnimation.h in Headers */,
+				83EC88F12AEF985800740AFF /* AdaptScreen.h in Headers */,
+				83EC89872AEF989300740AFF /* DGActivityIndicatorDoubleBounceAnimation.h in Headers */,
+				83EC89B72AEF98AA00740AFF /* APIBaseManager.h in Headers */,
+				83EC896E2AEF989300740AFF /* DGActivityIndicatorTripleRingsAnimation.h in Headers */,
+				83EC88E82AEF985800740AFF /* UITableView+EmptyView.h in Headers */,
+				83EC89C92AEF98AA00740AFF /* HYUkTempCategaryModel.h in Headers */,
+				83EC895D2AEF989300740AFF /* DGActivityIndicatorBallZigZagDeflectAnimation.h in Headers */,
+				83EC89882AEF989300740AFF /* DGActivityIndicatorLineScalePulseOutAnimation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		83EC88B92AEF536000740AFF /* VideoFrame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83EC88C12AEF536000740AFF /* Build configuration list for PBXNativeTarget "VideoFrame" */;
+			buildPhases = (
+				FCF9AC2DEA097024E20D8735 /* [CP] Check Pods Manifest.lock */,
+				83EC88B52AEF536000740AFF /* Headers */,
+				83EC88B62AEF536000740AFF /* Sources */,
+				83EC88B72AEF536000740AFF /* Frameworks */,
+				83EC88B82AEF536000740AFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoFrame;
+			productName = VideoFrame;
+			productReference = 83EC88BA2AEF536000740AFF /* VideoFrame.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83EC88B12AEF536000740AFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					83EC88B92AEF536000740AFF = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 83EC88B42AEF536000740AFF /* Build configuration list for PBXProject "VideoFrame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83EC88B02AEF536000740AFF;
+			productRefGroup = 83EC88BB2AEF536000740AFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83EC88B92AEF536000740AFF /* VideoFrame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83EC88B82AEF536000740AFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FCF9AC2DEA097024E20D8735 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoFrame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83EC88B62AEF536000740AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83EC89E92AEF9BCF00740AFF /* HYUkSearchKeyModel.swift in Sources */,
+				83EC89452AEF989200740AFF /* MYDialogViewController.m in Sources */,
+				83EC8A7E2AEFA36600740AFF /* HYUkHistoryView.m in Sources */,
+				83EC89EA2AEF9BCF00740AFF /* HYVideoSearchLogic.swift in Sources */,
+				83EC89C12AEF98AA00740AFF /* HYUkVideoDetailModel.m in Sources */,
+				83EC8A8C2AEFA36600740AFF /* HYUkVideoPlayView.m in Sources */,
+				83EC89D62AEF9B8500740AFF /* HYUkShowLoadingManager.m in Sources */,
+				83EC8A3B2AEFA28200740AFF /* HYUkHomeCategeryCell.m in Sources */,
+				83EC897E2AEF989300740AFF /* DGActivityIndicatorBallZigZagDeflectAnimation.m in Sources */,
+				83EC89BD2AEF98AA00740AFF /* HYResponseRecommendModel.m in Sources */,
+				83EC8A7C2AEFA36600740AFF /* HYUkHistoryHeadView.m in Sources */,
+				83EC89612AEF989300740AFF /* DGActivityIndicatorBallZigZagAnimation.m in Sources */,
+				83EC8A3D2AEFA28200740AFF /* HYUkCategeryListView.m in Sources */,
+				83EC89BA2AEF98AA00740AFF /* BaseModel.m in Sources */,
+				83EC88E72AEF985800740AFF /* HYLocalPathManager.m in Sources */,
+				83EC894A2AEF989200740AFF /* DGActivityIndicatorTriangleSkewSpinAnimation.m in Sources */,
+				83EC896F2AEF989300740AFF /* DGActivityIndicatorBallTrianglePathAnimation.m in Sources */,
+				83EC897A2AEF989300740AFF /* DGActivityIndicatorTwoDotsAnimation.m in Sources */,
+				83EC89712AEF989300740AFF /* DGActivityIndicatorBallPulseAnimation.m in Sources */,
+				83EC8A932AEFA36600740AFF /* HYUkDetailViewController.m in Sources */,
+				83EC8A432AEFA28200740AFF /* HYUkHomeSearchView.m in Sources */,
+				83EC89C62AEF98AA00740AFF /* HYResponseSearchModel.m in Sources */,
+				83EC89E32AEF9BCF00740AFF /* HYVideoDBLogic.swift in Sources */,
+				83EC89E62AEF9BCF00740AFF /* HYUkHistoryRecordDao.swift in Sources */,
+				83EC89762AEF989300740AFF /* DGActivityIndicatorFiveDotsAnimation.m in Sources */,
+				83EC898E2AEF989300740AFF /* MYToast.m in Sources */,
+				83EC89692AEF989300740AFF /* DGActivityIndicatorLineScalePartyAnimation.m in Sources */,
+				83EC88D02AEF755A00740AFF /* HYUkVideoBaseViewController.m in Sources */,
+				83EC89602AEF989300740AFF /* DGActivityIndicatorBallRotateAnimation.m in Sources */,
+				83EC8A7B2AEFA36600740AFF /* HYUkRankViewCell.m in Sources */,
+				83EC8A3C2AEFA28200740AFF /* HYUkHomeCategeryView.m in Sources */,
+				83EC89682AEF989300740AFF /* DGActivityIndicatorCookieTerminatorAnimation.m in Sources */,
+				83EC8A892AEFA36600740AFF /* HYUkDownGatherView.m in Sources */,
+				83EC8A352AEFA28200740AFF /* HYUKRecommendViewController.m in Sources */,
+				83EC89C52AEF98AA00740AFF /* HYResponseCategeryModel.m in Sources */,
+				83EC89722AEF989300740AFF /* DGActivityIndicatorBallPulseSyncAnimation.m in Sources */,
+				83EC89852AEF989300740AFF /* DGActivityIndicatorBallClipRotateAnimation.m in Sources */,
+				83EC8A442AEFA28200740AFF /* HYUkVideoHomeListCell.m in Sources */,
+				83EC8A962AEFA36600740AFF /* HYUkCenterHistoryListCell.m in Sources */,
+				83EC8A832AEFA36600740AFF /* HYUkVideoDetailSelectWorkView.m in Sources */,
+				83EC897D2AEF989300740AFF /* DGActivityIndicatorBallSpinFadeLoader.m in Sources */,
+				83EC89CC2AEF98AA00740AFF /* HYVideoSingle.m in Sources */,
+				83EC896A2AEF989300740AFF /* DGActivityIndicatorLineScaleAnimation.m in Sources */,
+				83EC8A8F2AEFA36600740AFF /* HYUkVideoBriefDetailView.m in Sources */,
+				83EC89E52AEF9BCF00740AFF /* HYUkHistoryRecordModel.swift in Sources */,
+				83EC8A8D2AEFA36600740AFF /* HYUkVideoRecommendView.m in Sources */,
+				83EC88EC2AEF985800740AFF /* UITableView+EmptyView.m in Sources */,
+				83EC89782AEF989300740AFF /* DGActivityIndicatorBallScaleRippleMultipleAnimation.m in Sources */,
+				83EC89522AEF989300740AFF /* DGActivityIndicatorBallGridPulseAnimation.m in Sources */,
+				83EC89B22AEF98AA00740AFF /* Target_CTAppContext.m in Sources */,
+				83EC89632AEF989300740AFF /* DGActivityIndicatorLineScalePulseOutAnimation.m in Sources */,
+				83EC89B92AEF98AA00740AFF /* Target_FaceStoreService.m in Sources */,
+				83EC88E62AEF985800740AFF /* UICollectionView+EmptyView.m in Sources */,
+				83EC896B2AEF989300740AFF /* DGActivityIndicatorBallGridBeatAnimation.m in Sources */,
+				83EC89C42AEF98AA00740AFF /* HYResponseVideoListModel.m in Sources */,
+				83EC8A782AEFA36600740AFF /* HYUkRankClassView.m in Sources */,
+				83EC89E72AEF9BCF00740AFF /* HYUkHistoryRecordLogic.swift in Sources */,
+				83EC8A342AEFA28200740AFF /* HYUkHomeViewController.m in Sources */,
+				83EC8A392AEFA28200740AFF /* HYUkOtherViewController.m in Sources */,
+				83EC88EB2AEF985800740AFF /* UIColor+UkPublicUse.m in Sources */,
+				83EC89B42AEF98AA00740AFF /* APIBaseManager.m in Sources */,
+				83EC89832AEF989300740AFF /* DGActivityIndicatorRotatingTrigonAnimation.m in Sources */,
+				83EC89C32AEF98AA00740AFF /* HYUkTempCategaryModel.m in Sources */,
+				83EC896D2AEF989300740AFF /* DGActivityIndicatorBallClipRotateMultipleAnimation.m in Sources */,
+				83EC88EA2AEF985800740AFF /* UIImage+uk_bundleImage.m in Sources */,
+				83EC8A972AEFA36600740AFF /* HYUkCenterHistoryListViewController.m in Sources */,
+				83EC89472AEF989200740AFF /* DGActivityIndicatorView.m in Sources */,
+				83EC895F2AEF989300740AFF /* DGActivityIndicatorBallScaleRippleAnimation.m in Sources */,
+				83EC8A922AEFA36600740AFF /* HYUkDetailErrorView.m in Sources */,
+				83EC89862AEF989300740AFF /* DGActivityIndicatorLineScalePulseOutRapidAnimation.m in Sources */,
+				83EC8A812AEFA36600740AFF /* HYUkSearchViewController.m in Sources */,
+				83EC89E42AEF9BCF00740AFF /* HYVideoDataBaseTool.swift in Sources */,
+				83EC8A8E2AEFA36600740AFF /* HYUkVideoDetailBriefView.m in Sources */,
+				83EC89E82AEF9BCF00740AFF /* HYUkSearchKeyDao.swift in Sources */,
+				83EC89CD2AEF98AA00740AFF /* APIString.m in Sources */,
+				83EC89B32AEF98AA00740AFF /* FaceStoreService.m in Sources */,
+				83EC8A9B2AEFA3B300740AFF /* YXTypeManager.m in Sources */,
+				83EC89552AEF989300740AFF /* DGActivityIndicatorTriplePulseAnimation.m in Sources */,
+				83EC8A422AEFA28200740AFF /* HYUKHistoryRecodeView.m in Sources */,
+				83EC88F02AEF985800740AFF /* HYUkVideoConfigManager.m in Sources */,
+				83EC8A8A2AEFA36600740AFF /* HYUkAllGatherListView.m in Sources */,
+				83EC895A2AEF989300740AFF /* DGActivityIndicatorRotatingSquaresAnimation.m in Sources */,
+				83EC8A372AEFA28200740AFF /* HYUkRecommendHeadView.m in Sources */,
+				83EC89542AEF989300740AFF /* DGActivityIndicatorBallClipRotatePulseAnimation.m in Sources */,
+				83EC89D72AEF9B8500740AFF /* HYUkBaseListViewController.m in Sources */,
+				83EC89752AEF989300740AFF /* DGActivityIndicatorBallScaleAnimation.m in Sources */,
+				83EC898C2AEF989300740AFF /* LHYReachability.m in Sources */,
+				83EC8A7F2AEFA36600740AFF /* HYUkSearchHeadView.m in Sources */,
+				83EC89622AEF989300740AFF /* DGActivityIndicatorThreeDotsAnimation.m in Sources */,
+				83EC89C02AEF98AA00740AFF /* HYUKResponseNoticeModel.m in Sources */,
+				83EC89642AEF989300740AFF /* DGActivityIndicatorDoubleBounceAnimation.m in Sources */,
+				83EC895C2AEF989300740AFF /* DGActivityIndicatorBallScaleMultipleAnimation.m in Sources */,
+				83EC894B2AEF989200740AFF /* DGActivityIndicatorTripleRingsAnimation.m in Sources */,
+				83EC89C22AEF98AA00740AFF /* HYUkTextTempModel.m in Sources */,
+				83EC89702AEF989300740AFF /* DGActivityIndicatorRotatingSandglassAnimation.m in Sources */,
+				83EC8A762AEFA36600740AFF /* HYUkSearchListView.m in Sources */,
+				83EC89792AEF989300740AFF /* DGActivityIndicatorNineDotsAnimation.m in Sources */,
+				83EC89802AEF989300740AFF /* DGActivityIndicatorBallBeatAnimation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		83EC88BF2AEF536000740AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		83EC88C02AEF536000740AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83EC88C22AEF536000740AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01EEBD626F0C5807B309A33F /* Pods-VideoFrame.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xudehuaisss.VideoFrame;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83EC88C32AEF536000740AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44F7AEBCAE3A06CFFD61C922 /* Pods-VideoFrame.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xudehuaisss.VideoFrame;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83EC88B42AEF536000740AFF /* Build configuration list for PBXProject "VideoFrame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83EC88BF2AEF536000740AFF /* Debug */,
+				83EC88C02AEF536000740AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83EC88C12AEF536000740AFF /* Build configuration list for PBXNativeTarget "VideoFrame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83EC88C22AEF536000740AFF /* Debug */,
+				83EC88C32AEF536000740AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83EC88B12AEF536000740AFF /* Project object */;
+}

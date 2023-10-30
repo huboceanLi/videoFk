@@ -7,13 +7,53 @@
 //
 
 #import "HYAppDelegate.h"
+#import <VideoFrame/VideoFrame.h>
+
+@interface HYAppDelegate()<YXTypeManagerDelegate>
+
+
+@end
 
 @implementation HYAppDelegate
+
+//- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+//    UIInterfaceOrientationMask mask = [SJRotationManager supportedInterfaceOrientationsForWindow:window];
+//    NSLog(@"orientations: %ld, %@", mask, NSStringFromClass(window.class));
+//    return mask;
+//}
+//
+//- (BOOL)shouldAutorotate {
+//    return NO;
+//}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [YXTypeManager shareInstance].delegate = self;
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = UIColor.whiteColor;
+    
+        
+    HYUkHomeViewController *tabBar = [HYUkHomeViewController new];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tabBar];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
     return YES;
+}
+
+- (void)showAdWithType:(FromWayType)type
+{
+    if (type == FromWayType_detail_banner) {
+
+        UIView *v = [UIView new];
+        [[YXTypeManager shareInstance] showBannerAdWithResult:YES adView:v];
+    }else {
+        [[YXTypeManager shareInstance] showAdWithResult:YES];
+    }
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
