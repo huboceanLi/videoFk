@@ -1,0 +1,11 @@
+framework module VideoFrame {
+  umbrella header "VideoFrame.h"
+  export *
+
+  module * { export * }
+}
+
+module VideoFrame.Swift {
+  header "VideoFrame-Swift.h"
+  requires objc
+}

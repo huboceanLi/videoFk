@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5F1984C2ACD88A9865574285 /* Pods_VideoFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D03D23586A8742EEC404190 /* Pods_VideoFrame.framework */; };
+		831E52062B188E8800ACCA6B /* HYMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831E52052B188E8800ACCA6B /* HYMedia.framework */; };
+		831E520A2B188EAA00ACCA6B /* SJVideoPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 831E52082B188EAA00ACCA6B /* SJVideoPlayer.bundle */; };
+		831E520B2B188EAA00ACCA6B /* SJBaseVideoPlayerResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 831E52092B188EAA00ACCA6B /* SJBaseVideoPlayerResources.bundle */; };
 		83EC88BE2AEF536000740AFF /* VideoFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88BD2AEF536000740AFF /* VideoFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83EC88D02AEF755A00740AFF /* HYUkVideoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC88CE2AEF755A00740AFF /* HYUkVideoBaseViewController.m */; };
 		83EC88D12AEF755A00740AFF /* HYUkVideoBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC88CF2AEF755A00740AFF /* HYUkVideoBaseViewController.h */; };
@@ -200,13 +203,15 @@
 		83EC8A972AEFA36600740AFF /* HYUkCenterHistoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A732AEFA36600740AFF /* HYUkCenterHistoryListViewController.m */; };
 		83EC8A9A2AEFA3B300740AFF /* YXTypeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC8A982AEFA3B300740AFF /* YXTypeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83EC8A9B2AEFA3B300740AFF /* YXTypeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC8A992AEFA3B300740AFF /* YXTypeManager.m */; };
-		83EC8E462AEFB3C200740AFF /* HYMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EC8E452AEFB3C200740AFF /* HYMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01EEBD626F0C5807B309A33F /* Pods-VideoFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoFrame.debug.xcconfig"; path = "Target Support Files/Pods-VideoFrame/Pods-VideoFrame.debug.xcconfig"; sourceTree = "<group>"; };
 		2D03D23586A8742EEC404190 /* Pods_VideoFrame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoFrame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F7AEBCAE3A06CFFD61C922 /* Pods-VideoFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoFrame.release.xcconfig"; path = "Target Support Files/Pods-VideoFrame/Pods-VideoFrame.release.xcconfig"; sourceTree = "<group>"; };
+		831E52052B188E8800ACCA6B /* HYMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HYMedia.framework; sourceTree = "<group>"; };
+		831E52082B188EAA00ACCA6B /* SJVideoPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SJVideoPlayer.bundle; sourceTree = "<group>"; };
+		831E52092B188EAA00ACCA6B /* SJBaseVideoPlayerResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SJBaseVideoPlayerResources.bundle; sourceTree = "<group>"; };
 		83EC88BA2AEF536000740AFF /* VideoFrame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VideoFrame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EC88BD2AEF536000740AFF /* VideoFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoFrame.h; sourceTree = "<group>"; };
 		83EC88CE2AEF755A00740AFF /* HYUkVideoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkVideoBaseViewController.m; sourceTree = "<group>"; };
@@ -400,7 +405,6 @@
 		83EC8A732AEFA36600740AFF /* HYUkCenterHistoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUkCenterHistoryListViewController.m; sourceTree = "<group>"; };
 		83EC8A982AEFA3B300740AFF /* YXTypeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXTypeManager.h; sourceTree = "<group>"; };
 		83EC8A992AEFA3B300740AFF /* YXTypeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXTypeManager.m; sourceTree = "<group>"; };
-		83EC8E452AEFB3C200740AFF /* HYMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HYMedia.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,7 +412,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83EC8E462AEFB3C200740AFF /* HYMedia.framework in Frameworks */,
+				831E52062B188E8800ACCA6B /* HYMedia.framework in Frameworks */,
 				5F1984C2ACD88A9865574285 /* Pods_VideoFrame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +420,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		831E52072B188EAA00ACCA6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				831E52082B188EAA00ACCA6B /* SJVideoPlayer.bundle */,
+				831E52092B188EAA00ACCA6B /* SJBaseVideoPlayerResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		83EC88B02AEF536000740AFF = {
 			isa = PBXGroup;
 			children = (
@@ -437,7 +450,8 @@
 		83EC88BC2AEF536000740AFF /* VideoFrame */ = {
 			isa = PBXGroup;
 			children = (
-				83EC8E452AEFB3C200740AFF /* HYMedia.framework */,
+				831E52072B188EAA00ACCA6B /* Resources */,
+				831E52052B188E8800ACCA6B /* HYMedia.framework */,
 				83EC89EB2AEF9CCB00740AFF /* controller */,
 				83EC89D82AEF9BCF00740AFF /* DB */,
 				83EC898F2AEF98A900740AFF /* Api */,
@@ -1046,6 +1060,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831E520B2B188EAA00ACCA6B /* SJBaseVideoPlayerResources.bundle in Resources */,
+				831E520A2B188EAA00ACCA6B /* SJVideoPlayer.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

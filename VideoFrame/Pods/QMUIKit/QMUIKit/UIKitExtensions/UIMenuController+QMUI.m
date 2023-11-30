@@ -42,10 +42,12 @@ static BOOL kHasAddedMenuControllerNotification = NO;
                 UIMenuController *menuController = originSelectorIMP(selfObject, originCMD);
                 
                 /// 修复 issue：https://github.com/Tencent/QMUI_iOS/issues/659
-                if (!kHasAddedMenuControllerNotification) {
-                    kHasAddedMenuControllerNotification = YES;
-                    [[NSNotificationCenter defaultCenter] addObserver:menuController selector:@selector(handleMenuWillShowNotification:) name:UIMenuControllerWillShowMenuNotification object:nil];
-                    [[NSNotificationCenter defaultCenter] addObserver:menuController selector:@selector(handleMenuWillHideNotification:) name:UIMenuControllerWillHideMenuNotification object:nil];
+                if (@available(iOS 13.0, *)) {
+                    if (!kHasAddedMenuControllerNotification) {
+                        kHasAddedMenuControllerNotification = YES;
+                        [[NSNotificationCenter defaultCenter] addObserver:menuController selector:@selector(handleMenuWillShowNotification:) name:UIMenuControllerWillShowMenuNotification object:nil];
+                        [[NSNotificationCenter defaultCenter] addObserver:menuController selector:@selector(handleMenuWillHideNotification:) name:UIMenuControllerWillHideMenuNotification object:nil];
+                    }
                 }
                 
                 return menuController;

@@ -14,10 +14,12 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - Alamofire (4.9.1)
   - CTMediator (48)
   - CTNetworking (15):
     - AFNetworking
     - CTMediator
+  - HandyJSON (5.0.2)
   - HYBaseTool (1.0.4):
     - Masonry
     - QMUIKit
@@ -321,6 +323,7 @@ PODS:
     - QMUIKit/QMUILog
   - QMUIKit/QMUIResources (4.6.1)
   - QMUIKit/QMUIWeakObjectContainer (4.6.1)
+  - SnapKit (5.6.0)
   - SQLiteRepairKit (1.3.0):
     - WCDBOptimizedSQLCipher (~> 1.3.0)
   - videoFK (0.1.0)
@@ -342,13 +345,16 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - Alamofire (= 4.9.1)
   - CTNetworking
+  - HandyJSON (= 5.0.2)
   - HYBaseTool (= 1.0.4)
   - HYText
   - JXCategoryView
   - Masonry
   - MJRefresh
   - QMUIKit (= 4.6.1)
+  - SnapKit (= 5.6.0)
   - videoFK (from `../`)
   - WCDB.swift (= 1.1.0)
   - YYCategories
@@ -358,14 +364,17 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - Alamofire
     - CTMediator
     - CTNetworking
+    - HandyJSON
     - HYBaseTool
     - HYText
     - JXCategoryView
     - Masonry
     - MJRefresh
     - QMUIKit
+    - SnapKit
     - SQLiteRepairKit
     - WCDB.swift
     - WCDBOptimizedSQLCipher
@@ -381,14 +390,17 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   CTMediator: 3f3578b525b3a46a7a2f92a99922ec40363f4269
   CTNetworking: 53a7fd1d39bce85c15af471890037b4608b7124b
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   HYBaseTool: 8f3f1f91a1ac925e8e0760925a225781d4d338f3
   HYText: 9c1de37428236f73b81ee60ad9cb36e9bc80f250
   JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   QMUIKit: e5e848e433948258f8a79e794ed68180c5f7c2e1
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SQLiteRepairKit: a66145aadae91886c800f75e16f5cc6476af1a93
   videoFK: f5a7d2bac2dedaafc6337cd52ca258318ffa5b40
   WCDB.swift: 39e28fe29b5a3bf2927d9fb9218978f19bd49ff0
@@ -399,6 +411,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 7ab8427ff619e83df54ac3f701539e6d7ce78854
+PODFILE CHECKSUM: df9213998ae29b04201064e698b73ef85a1064a2
 
 COCOAPODS: 1.13.0

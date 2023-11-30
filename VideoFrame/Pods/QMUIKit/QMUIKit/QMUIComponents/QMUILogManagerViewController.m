@@ -49,7 +49,7 @@
 - (void)initSearchController {
     [super initSearchController];
     self.searchController.qmui_preferredStatusBarStyleBlock = ^UIStatusBarStyle{
-        return UIStatusBarStyleDarkContent;
+        return QMUIStatusBarStyleDarkContent;
     };
 }
 
