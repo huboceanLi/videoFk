@@ -13,7 +13,7 @@
 
 #if 1
 //开发
-NSString *const Service_URL = @"http://vod.wxspb.cn";
+NSString *const Service_URL = @"https://vod.wxxykj.cn";
 //NSString *const Service_URL = @"http://192.168.96.31:8075";
 
 #elif 0
@@ -33,9 +33,9 @@ NSString * const video_list = @"get_list";
 NSString * const video_search = @"search_movies";
 NSString * const video_rank = @"get_rank";
 NSString * const video_guess_Like = @"guess_you_like";
-NSString * const video_get_notice = @"http://vod.wxspb.cn/api/index/get_notice";
+NSString * const video_get_notice = @"https://vod.wxxykj.cn/api/index/get_notice";
 
-NSString * const video_get_version = @"http://vod.wxspb.cn/api/index/get_version";
+NSString * const video_get_version = @"https://vod.wxxykj.cn/api/index/get_version";
 
 #pragma mark-- config
 NSString * const video_allow_flow_play = @"video_allow_flow_play";

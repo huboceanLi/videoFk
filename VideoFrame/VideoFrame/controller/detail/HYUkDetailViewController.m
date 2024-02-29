@@ -25,6 +25,7 @@
 #import "HYUkVideoConfigManager.h"
 #import "MYToast.h"
 #import <HYMedia/HYMedia.h>
+#import "VideoFrame/VideoFrame-Swift.h"
 
 static CGFloat briefViewHeoght = 60.0;
 
@@ -47,6 +48,9 @@ static NSInteger allTime = 31;
 @property(nonatomic, strong) HYVideoPlayView * playVideoView;
 @property(nonatomic, assign) NSInteger currentTime;
 
+@property (nonatomic, strong) HYUkHistoryRecordModel *currentRecordModel;
+@property (nonatomic, assign) NSInteger recordIndex;
+
 
 @property(nonatomic, strong) UIView * adView;
 
@@ -57,7 +61,7 @@ static NSInteger allTime = 31;
 @implementation HYUkDetailViewController
 
 - (void)dealloc {
-//    [self.playView removeView];
+    [self.playVideoView removeView];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     NSLog(@"HYVideoDetailViewController 灰飞烟灭！");
 }
@@ -217,10 +221,7 @@ static NSInteger allTime = 31;
         weakSelf.selectWorkView.data = responseObject;
         [weakSelf.selectWorkView loadContent];
         
-        
-        [weakSelf.playVideoView startPlayUrl:@"" startPosition:0];
-//        weakSelf.playView.data = responseObject;
-//        [weakSelf.playView loadContent];
+        [weakSelf loadContent];
 
         [weakSelf getGuessLikeList];
         
@@ -355,9 +356,7 @@ static NSInteger allTime = 31;
                     return;
                 }
                 
-                [weakSelf.playVideoView startPlayUrl:@"" startPosition:0];
-
-//                [weakSelf.playView changeSelect:dic[@"name"] Url:dic[@"url"]];
+                [weakSelf.playVideoView startPlayUrl:dic[@"url"] startPosition:0];
             });
         }];
         
@@ -375,9 +374,7 @@ static NSInteger allTime = 31;
             }];
             return;
         }
-        [self.playVideoView startPlayUrl:@"" startPosition:0];
-
-//        [self.playView changeSelect:dic[@"name"] Url:dic[@"url"]];
+        [self.playVideoView startPlayUrl:dic[@"url"] startPosition:0];
         return;
     }
     
@@ -430,6 +427,54 @@ static NSInteger allTime = 31;
 
 - (void)saveHistoryRecord {
     
+}
+
+//getdata后播放视频
+- (void)loadContent {
+    
+    if (self.detailModel.vod_play_url.count >= 1) {
+        HYUkHistoryRecordModel *tempModel = [[HYUkHistoryRecordLogic share] queryAppointRecordWithVideoId:self.detailModel.ID];
+        if (tempModel) {
+            
+            BOOL isHave = false;
+            
+            for (int i = 0; i < self.detailModel.vod_play_url.count; i++) {
+                HYUkVideoDetailItemModel *item = self.detailModel.vod_play_url[i];
+                if ([item.url isEqualToString:tempModel.playUrl] || [item.name isEqualToString:tempModel.playName]) {
+                    self.currentRecordModel = tempModel;
+                    isHave = true;
+                    self.recordIndex = i;
+                    [self.playVideoView startPlayUrl:tempModel.playUrl startPosition:0];
+                    
+                    break;
+                }
+            }
+            
+            if (!isHave) {
+                self.currentRecordModel = [HYUkHistoryRecordModel new];
+                
+                HYUkVideoDetailItemModel *playModel = self.detailModel.vod_play_url.firstObject;
+                self.recordIndex = 0;
+                self.currentRecordModel.playUrl = playModel.url;
+                self.currentRecordModel.playName = playModel.name;
+
+                [self.playVideoView startPlayUrl:playModel.url startPosition:0];
+                
+                return;
+            }
+            
+        }else {
+            self.currentRecordModel = [HYUkHistoryRecordModel new];
+            
+            HYUkVideoDetailItemModel *playModel = self.detailModel.vod_play_url.firstObject;
+            self.recordIndex = 0;
+            self.currentRecordModel.playUrl = playModel.url;
+            self.currentRecordModel.playName = playModel.name;
+
+            [self.playVideoView startPlayUrl:playModel.url startPosition:0];
+            return;
+        }
+    }
 }
 
 @end
