@@ -77,7 +77,7 @@ static NSInteger allTime = 31;
     
 //    [self closeAddButton];
     
-//    [self.playView saveHistoryRecord];
+    [self saveHistoryRecord];
     
     if ([self.delegate respondsToSelector:@selector(changeVideoProgressVideoId:)]) {
         [self.delegate changeVideoProgressVideoId:self.videoId];
@@ -427,6 +427,19 @@ static NSInteger allTime = 31;
 
 - (void)saveHistoryRecord {
     
+    NSInteger currentTime = self.currentTime - 10;
+    if (currentTime > 30) {
+        HYUkHistoryRecordModel *recordModel = [HYUkHistoryRecordModel new];
+        recordModel.tvId = self.detailModel.ID;
+        recordModel.name = self.detailModel.vod_name;
+        recordModel.playUrl = self.currentRecordModel.playUrl;
+        recordModel.imageUrl = self.detailModel.vod_pic;
+        recordModel.duration = [self.playVideoView getDuration];
+        recordModel.playDuration = currentTime;
+        recordModel.playName = self.currentRecordModel.playName;
+        recordModel.create_Time = [[[HYUkVideoConfigManager sharedInstance] getNowTimeTimestamp] integerValue];
+        [[HYUkHistoryRecordLogic share] insertHistoryRecordWithRecordModel:recordModel];
+    }
 }
 
 //getdata后播放视频
@@ -444,7 +457,7 @@ static NSInteger allTime = 31;
                     self.currentRecordModel = tempModel;
                     isHave = true;
                     self.recordIndex = i;
-                    [self.playVideoView startPlayUrl:tempModel.playUrl startPosition:0];
+                    [self.playVideoView startPlayUrl:tempModel.playUrl startPosition:tempModel.playDuration];
                     
                     break;
                 }

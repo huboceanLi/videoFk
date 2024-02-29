@@ -42,12 +42,16 @@
 
 @implementation HYUkHomeViewController
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self getHistory];
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.hidesBottomBarWhenPushed = NO;
     self.tabBarController.tabBar.hidden = NO;
     self.navigationController.navigationBarHidden = YES;
-    [self getHistory];
 }
 
 - (void)viewDidLoad {
