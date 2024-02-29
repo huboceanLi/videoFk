@@ -243,7 +243,11 @@ static NSInteger allTime = 31;
                         [weakSelf.adView mas_updateConstraints:^(MASConstraintMaker *make) {
                             make.height.mas_offset(120.0);
                         }];
+
                         [weakSelf.adView addSubview:adView];
+                        [adView mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.left.right.top.bottom.equalTo(weakSelf.adView);
+                        }];
                     }else {
                         weakSelf.adView.hidden = YES;
                         [weakSelf.adView mas_updateConstraints:^(MASConstraintMaker *make) {

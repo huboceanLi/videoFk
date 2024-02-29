@@ -49,6 +49,7 @@
     if (type == FromWayType_detail_banner) {
 
         UIView *v = [UIView new];
+        v.backgroundColor = UIColor.redColor;
         [[YXTypeManager shareInstance] showBannerAdWithResult:YES adView:v];
     }else {
         [[YXTypeManager shareInstance] showAdWithResult:YES];
