@@ -36,7 +36,7 @@ static NSInteger allTime = 31;
 @property(nonatomic, assign) CGFloat playViewHeight;
 @property(nonatomic, strong) UIScrollView * scrollView;
 //@property(nonatomic, strong) HYUkVideoPlayView * playView;
-@property(nonatomic, strong) HYUkVideoDetailBriefView * briefView;
+//@property(nonatomic, strong) HYUkVideoDetailBriefView * briefView;
 @property(nonatomic, strong) HYUkVideoDetailSelectWorkView * selectWorkView;
 @property(nonatomic, strong) HYUkVideoRecommendView * recommendView;
 @property(nonatomic, strong) HYUkVideoBriefDetailView * briefDetailView;
@@ -52,7 +52,7 @@ static NSInteger allTime = 31;
 @property (nonatomic, assign) NSInteger recordIndex;
 
 
-@property(nonatomic, strong) UIView * adView;
+//@property(nonatomic, strong) UIView * adView;
 
 @property (nonatomic, strong) UIButton *backButton;
 
@@ -127,32 +127,39 @@ static NSInteger allTime = 31;
         make.left.right.bottom.equalTo(self.view);
     }];
 
-    self.briefView = [HYUkVideoDetailBriefView new];
-    self.briefView.delegate = self;
-    [self.scrollView addSubview:self.briefView];
+//    self.briefView = [HYUkVideoDetailBriefView new];
+//    self.briefView.delegate = self;
+//    [self.scrollView addSubview:self.briefView];
     
-    [self.briefView mas_makeConstraints:^(MASConstraintMaker *make) {
+//    [self.briefView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.scrollView.mas_top).offset(0);
+//        make.left.equalTo(self.scrollView);
+//        make.width.mas_offset(SCREEN_WIDTH);
+//        make.height.mas_offset(briefViewHeoght);
+//    }];
+
+//    self.adView = [UIView new];
+//    self.adView.backgroundColor = UIColor.clearColor;
+//    [self.scrollView addSubview:self.adView];
+
+    self.briefDetailView = [HYUkVideoBriefDetailView new];
+//    self.briefDetailView.delegate = self;
+    [self.scrollView addSubview:self.briefDetailView];
+    
+    [self.briefDetailView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.scrollView.mas_top).offset(0);
+//        make.height.mas_offset(100.0);
         make.left.equalTo(self.scrollView);
         make.width.mas_offset(SCREEN_WIDTH);
-        make.height.mas_offset(briefViewHeoght);
     }];
-
-    self.adView = [UIView new];
-    self.adView.backgroundColor = UIColor.clearColor;
-    [self.scrollView addSubview:self.adView];
-    [self.adView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.briefView.mas_bottom).offset(0);
-        make.left.right.equalTo(self.view);
-        make.height.mas_offset(0.0);
-    }];
+    
     
     self.selectWorkView = [HYUkVideoDetailSelectWorkView new];
     self.selectWorkView.delegate = self;
     [self.scrollView addSubview:self.selectWorkView];
     
     [self.selectWorkView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.adView.mas_bottom).offset(0);
+        make.top.equalTo(self.briefDetailView.mas_bottom).offset(0);
         make.left.equalTo(self.scrollView);
         make.width.mas_offset(SCREEN_WIDTH);
         make.height.mas_offset(XJFlexibleFont(100.0));
@@ -170,9 +177,9 @@ static NSInteger allTime = 31;
         make.bottom.equalTo(self.scrollView).offset(-(IS_iPhoneX ? 34 : 20));
     }];
     
-    [self.view addSubview:self.briefDetailView];
+//    [self.view addSubview:self.briefDetailView];
 
-    self.briefDetailView.hidden = YES;
+//    self.briefDetailView.hidden = YES;
     
     [self.view addSubview:self.gatherListView];
 
@@ -212,8 +219,8 @@ static NSInteger allTime = 31;
     [[HYVideoSingle sharedInstance] getVideoDetaildID:self.videoId success:^(NSString *message, id responseObject) {
         weakSelf.detailModel = responseObject;
         weakSelf.scrollView.hidden = NO;
-        weakSelf.briefView.data = responseObject;
-        [weakSelf.briefView loadContent];
+//        weakSelf.briefView.data = responseObject;
+//        [weakSelf.briefView loadContent];
         
         weakSelf.briefDetailView.data = responseObject;
         [weakSelf.briefDetailView loadContent];
@@ -232,36 +239,35 @@ static NSInteger allTime = 31;
         [weakSelf.downGatherView loadContent];
         
 //        [weakSelf.playView startPlay];
-        
 
-        [[YXTypeManager shareInstance] showBannerAdComplete:^(BOOL complete, UIView * adView) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                if (complete) {
-                    
-                    if (adView) {
-                        weakSelf.adView.hidden = NO;
-                        [weakSelf.adView mas_updateConstraints:^(MASConstraintMaker *make) {
-                            make.height.mas_offset(120.0);
-                        }];
-
-                        [weakSelf.adView addSubview:adView];
-                        [adView mas_makeConstraints:^(MASConstraintMaker *make) {
-                            make.left.right.top.bottom.equalTo(weakSelf.adView);
-                        }];
-                    }else {
-                        weakSelf.adView.hidden = YES;
-                        [weakSelf.adView mas_updateConstraints:^(MASConstraintMaker *make) {
-                            make.height.mas_offset(0.0);
-                        }];
-                    }
-                }else {
-                    weakSelf.adView.hidden = YES;
-                    [weakSelf.adView mas_updateConstraints:^(MASConstraintMaker *make) {
-                        make.height.mas_offset(0.0);
-                    }];
-                }
-            });
-        }];
+//        [[YXTypeManager shareInstance] showBannerAd:self complete:^(BOOL complete, UIView * adView) {
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                if (complete) {
+//                    
+//                    if (adView) {
+//                        weakSelf.adView.hidden = NO;
+//                        [weakSelf.adView mas_updateConstraints:^(MASConstraintMaker *make) {
+//                            make.height.mas_offset(120.0);
+//                        }];
+//
+//                        [weakSelf.adView addSubview:adView];
+//                        [adView mas_makeConstraints:^(MASConstraintMaker *make) {
+//                            make.left.right.top.bottom.equalTo(weakSelf.adView);
+//                        }];
+//                    }else {
+//                        weakSelf.adView.hidden = YES;
+//                        [weakSelf.adView mas_updateConstraints:^(MASConstraintMaker *make) {
+//                            make.height.mas_offset(0.0);
+//                        }];
+//                    }
+//                }else {
+//                    weakSelf.adView.hidden = YES;
+//                    [weakSelf.adView mas_updateConstraints:^(MASConstraintMaker *make) {
+//                        make.height.mas_offset(0.0);
+//                    }];
+//                }
+//            });
+//        }];
         
     } fail:^(CTAPIManagerErrorType errorType, NSString *errorMessage) {
         self.errorView.hidden = NO;
@@ -290,23 +296,23 @@ static NSInteger allTime = 31;
 
 - (void)customView:(HYBaseView *)view event:(id)event
 {
-    if ([view isKindOfClass:[HYUkVideoDetailBriefView class]]) {
-        self.briefDetailView.hidden = NO;
-        self.briefDetailView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - self.playViewHeight);
-        [UIView animateWithDuration:0.2 animations:^{
-            self.briefDetailView.frame = CGRectMake(0, self.playViewHeight, SCREEN_WIDTH, SCREEN_HEIGHT - self.playViewHeight);
-        }];
-        return;
-    }
+//    if ([view isKindOfClass:[HYUkVideoDetailBriefView class]]) {
+//        self.briefDetailView.hidden = NO;
+//        self.briefDetailView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - self.playViewHeight);
+//        [UIView animateWithDuration:0.2 animations:^{
+//            self.briefDetailView.frame = CGRectMake(0, self.playViewHeight, SCREEN_WIDTH, SCREEN_HEIGHT - self.playViewHeight);
+//        }];
+//        return;
+//    }
     
-    if ([view isKindOfClass:[HYUkVideoBriefDetailView class]]) {
-        [UIView animateWithDuration:0.2 animations:^{
-            self.briefDetailView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - self.playViewHeight);
-        } completion:^(BOOL finished) {
-            self.briefDetailView.hidden = YES;
-        }];
-        return;
-    }
+//    if ([view isKindOfClass:[HYUkVideoBriefDetailView class]]) {
+//        [UIView animateWithDuration:0.2 animations:^{
+//            self.briefDetailView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - self.playViewHeight);
+//        } completion:^(BOOL finished) {
+//            self.briefDetailView.hidden = YES;
+//        }];
+//        return;
+//    }
     
     if ([view isKindOfClass:[HYUkVideoRecommendView class]]) {
         BOOL isOpenTheProxy = [[HYUkVideoConfigManager sharedInstance] isOpenTheProxy];
@@ -348,7 +354,7 @@ static NSInteger allTime = 31;
         
         __weak typeof(self) weakSelf = self;
 
-        [[YXTypeManager shareInstance] showAdWithType:FromWayType_Unknown complete:^(BOOL result) {
+//        [[YXTypeManager shareInstance] showAdWithType:FromWayType_Unknown complete:^(BOOL result) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 NSDictionary *dic = event;
                 if ([dic[@"type"] isEqualToString:@"more"]) {
@@ -362,7 +368,7 @@ static NSInteger allTime = 31;
                 
                 [weakSelf.playVideoView startPlayUrl:dic[@"url"] startPosition:0];
             });
-        }];
+//        }];
         
 
         return;
@@ -389,13 +395,13 @@ static NSInteger allTime = 31;
     }
 }
 
-- (HYUkVideoBriefDetailView *)briefDetailView {
-    if (!_briefDetailView) {
-        _briefDetailView = [HYUkVideoBriefDetailView new];
-        _briefDetailView.delegate = self;
-    }
-    return _briefDetailView;
-}
+//- (HYUkVideoBriefDetailView *)briefDetailView {
+//    if (!_briefDetailView) {
+//        _briefDetailView = [HYUkVideoBriefDetailView new];
+//        _briefDetailView.delegate = self;
+//    }
+//    return _briefDetailView;
+//}
 
 - (HYUkDetailErrorView *)errorView {
     if (!_errorView) {
@@ -463,6 +469,7 @@ static NSInteger allTime = 31;
                     self.recordIndex = i;
                     [self.playVideoView startPlayUrl:tempModel.playUrl startPosition:tempModel.playDuration];
                     
+                    [self ad];
                     break;
                 }
             }
@@ -476,7 +483,8 @@ static NSInteger allTime = 31;
                 self.currentRecordModel.playName = playModel.name;
 
                 [self.playVideoView startPlayUrl:playModel.url startPosition:0];
-                
+                [self ad];
+
                 return;
             }
             
@@ -489,9 +497,23 @@ static NSInteger allTime = 31;
             self.currentRecordModel.playName = playModel.name;
 
             [self.playVideoView startPlayUrl:playModel.url startPosition:0];
+            [self ad];
+
             return;
         }
     }
 }
 
+- (void)ad {
+    
+    [self.playVideoView pause];
+
+    __weak typeof(self) weakSelf = self;
+    [[YXTypeManager shareInstance] showAdWithType:FromWayType_detail_play complete:^(BOOL result) {
+            
+        if (result) {
+            [weakSelf.playVideoView startPlay];
+        }
+    }];
+}
 @end

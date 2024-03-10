@@ -96,7 +96,7 @@
 		83EC89882AEF989300740AFF /* DGActivityIndicatorLineScalePulseOutAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC893B2AEF989200740AFF /* DGActivityIndicatorLineScalePulseOutAnimation.h */; };
 		83EC89892AEF989300740AFF /* DGActivityIndicatorBallZigZagAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC893C2AEF989200740AFF /* DGActivityIndicatorBallZigZagAnimation.h */; };
 		83EC898A2AEF989300740AFF /* DGActivityIndicatorThreeDotsAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC893D2AEF989200740AFF /* DGActivityIndicatorThreeDotsAnimation.h */; };
-		83EC898B2AEF989300740AFF /* LHYReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC893F2AEF989200740AFF /* LHYReachability.h */; };
+		83EC898B2AEF989300740AFF /* LHYReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC893F2AEF989200740AFF /* LHYReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83EC898C2AEF989300740AFF /* LHYReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89402AEF989200740AFF /* LHYReachability.m */; };
 		83EC898D2AEF989300740AFF /* MYToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC89422AEF989200740AFF /* MYToast.h */; };
 		83EC898E2AEF989300740AFF /* MYToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC89432AEF989200740AFF /* MYToast.m */; };
@@ -886,6 +886,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EC898B2AEF989300740AFF /* LHYReachability.h in Headers */,
 				83EC8A412AEFA28200740AFF /* HYUkHomeViewController.h in Headers */,
 				83EC8A9A2AEFA3B300740AFF /* YXTypeManager.h in Headers */,
 				83EC88E92AEF985800740AFF /* HYUkVideoConfigManager.h in Headers */,
@@ -935,7 +936,6 @@
 				83EC89742AEF989300740AFF /* DGActivityIndicatorBallClipRotatePulseAnimation.h in Headers */,
 				83EC89BB2AEF98AA00740AFF /* BaseModel.h in Headers */,
 				83EC8A3F2AEFA28200740AFF /* HYUkCategeryListView.h in Headers */,
-				83EC898B2AEF989300740AFF /* LHYReachability.h in Headers */,
 				83EC89562AEF989300740AFF /* DGActivityIndicatorBallPulseSyncAnimation.h in Headers */,
 				83EC89CA2AEF98AA00740AFF /* HYUkTextTempModel.h in Headers */,
 				83EC89442AEF989200740AFF /* MYDialogViewController.h in Headers */,

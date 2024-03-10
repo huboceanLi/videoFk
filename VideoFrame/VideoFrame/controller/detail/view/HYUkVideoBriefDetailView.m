@@ -13,7 +13,7 @@
 
 @interface HYUkVideoBriefDetailView()
 
-@property(nonatomic, strong) UIScrollView * scrollView;
+//@property(nonatomic, strong) UIScrollView * scrollView;
 
 @property (nonatomic, strong) UILabel *name;
 @property (nonatomic, strong) UILabel *des;
@@ -39,6 +39,7 @@
         make.top.equalTo(self.mas_top).offset(0);
         make.width.height.mas_equalTo(@(50));
     }];
+    closeBtn.hidden = YES;
     
     self.name = [UILabel new];
     self.name.font = [UIFont boldSystemFontOfSize:18];
@@ -52,37 +53,37 @@
         make.width.lessThanOrEqualTo(@(SCREEN_WIDTH - 80));
     }];
 
-    self.scrollView = [UIScrollView new];
-    self.scrollView.showsVerticalScrollIndicator = NO;
-    self.scrollView.showsHorizontalScrollIndicator = NO;
-    self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, IS_iPhoneX ? 44 : 20, 0);
-    [self addSubview:self.scrollView];
-    if (@available(iOS 11.0, *)) {
-        [self.scrollView setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
-    }
-
-    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.mas_top).offset(50);
-        make.left.equalTo(self.mas_left).offset(0);
-        make.width.mas_equalTo(@(SCREEN_WIDTH));
-        make.height.equalTo(self.mas_height);
-    }];
+//    self.scrollView = [UIScrollView new];
+//    self.scrollView.showsVerticalScrollIndicator = NO;
+//    self.scrollView.showsHorizontalScrollIndicator = NO;
+//    self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, IS_iPhoneX ? 44 : 20, 0);
+//    [self addSubview:self.scrollView];
+//    if (@available(iOS 11.0, *)) {
+//        [self.scrollView setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+//    }
+//
+//    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.mas_top).offset(50);
+//        make.left.equalTo(self.mas_left).offset(0);
+//        make.width.mas_equalTo(@(SCREEN_WIDTH));
+//        make.height.equalTo(self.mas_height);
+//    }];
 
     self.des = [UILabel new];
     self.des.font = [UIFont systemFontOfSize:13];
     self.des.numberOfLines = 0;
     self.des.textColor = UIColor.textColor99;
-    [self.scrollView addSubview:self.des];
+    [self addSubview:self.des];
 
     [self.des mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left).offset(16);
-        make.top.equalTo(self.scrollView.mas_top).offset(10);
+        make.top.equalTo(self.name.mas_bottom).offset(10);
         make.width.mas_equalTo(@(SCREEN_WIDTH - 32));
     }];
 
     UIView *lines = [UIView new];
     lines.backgroundColor = [UIColor.grayColor colorWithAlphaComponent:0.2];
-    [self.scrollView addSubview:lines];
+    [self addSubview:lines];
 
     [lines mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left).offset(16);
@@ -96,7 +97,7 @@
     self.tipLab.font = [UIFont boldSystemFontOfSize:18];
     self.tipLab.text = @"简介";
     self.tipLab.textColor = UIColor.textColor22;
-    [self.scrollView addSubview:self.tipLab];
+    [self addSubview:self.tipLab];
 
     [self.tipLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left).offset(16);
@@ -108,13 +109,13 @@
     self.briefLab.font = [UIFont systemFontOfSize:13];
     self.briefLab.numberOfLines = 0;
     self.briefLab.textColor = UIColor.textColor99;
-    [self.scrollView addSubview:self.briefLab];
+    [self addSubview:self.briefLab];
 
     [self.briefLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left).offset(16);
         make.top.equalTo(self.tipLab.mas_bottom).offset(20);
         make.width.mas_equalTo(@(SCREEN_WIDTH - 32));
-        make.bottom.equalTo(self.scrollView.mas_bottom).offset(-44);
+        make.bottom.equalTo(self.mas_bottom).offset(-10);
     }];
 }
 
@@ -140,21 +141,24 @@
     HYUkVideoDetailModel *model = self.data;
     self.name.text = model.vod_name;
     
-    NSString *scoreStr = @"";
+    NSString *ss = [NSString stringWithFormat:@"%@,%@",model.vod_area,model.vod_class];
+    ss = [ss stringByReplacingOccurrencesOfString:@"," withString:@"/"];
+    
+    NSString *scoreStr = @"评分: ";
     if (model.vod_douban_score.length > 0) {
-        scoreStr = [NSString stringWithFormat:@"评分: %@\n",model.vod_douban_score];
+        scoreStr = [NSString stringWithFormat:@"评分: %@",model.vod_douban_score];
     }
     
-    NSString *director = @"";
+    NSString *director = @"导演: ";
     if (model.vod_director.length > 0) {
         director = [NSString stringWithFormat:@"导演: %@\n",model.vod_director];
     }
     
-    NSString *actor = @"";
+    NSString *actor = @"主演: ";
     if (model.vod_actor.length > 0) {
         actor = [NSString stringWithFormat:@"主演: %@\n",model.vod_actor];
     }
-    NSString *s = [NSString stringWithFormat:@"%@\n%@%@类型: %@\n地区: %@\n年代: %@\n",scoreStr,director,actor,model.vod_class,model.vod_area,model.vod_year];
+    NSString *s = [NSString stringWithFormat:@"%@\n%@\n%@%@类型: %@\n地区: %@\n年代: %@\n",ss,scoreStr,director,actor,model.vod_class,model.vod_area,model.vod_year];
 
     self.des.attributedText = [self getFirstChapterString:s];
 

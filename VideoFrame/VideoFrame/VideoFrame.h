@@ -22,5 +22,5 @@ FOUNDATION_EXPORT const unsigned char VideoFrameVersionString[];
 
 #import <VideoFrame/YXTypeManager.h>
 #import <VideoFrame/HYUkHomeViewController.h>
-//#import <VideoFrame/SJRotationManager.h>
+#import <VideoFrame/LHYReachability.h>
 

@@ -132,7 +132,7 @@
     cell.name.text = model.name;
 
     if ([model.name isEqualToString:self.recordModel.playName] || [model.url isEqualToString:self.recordModel.playUrl]) {
-        cell.name.textColor = [UIColor mainColor];
+        cell.name.textColor = [UIColor blueColor];
         cell.userInteractionEnabled = NO;
     }else {
         cell.name.textColor = [UIColor textColor22];

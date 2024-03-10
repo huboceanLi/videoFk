@@ -46,6 +46,8 @@
     [self addSubview:self.moreBtn];
     [self.moreBtn addTarget:self action:@selector(moreButtonClick) forControlEvents:UIControlEventTouchUpInside];
     
+    self.moreBtn.hidden = YES;
+    
     [self.name mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left).offset(16);
         make.top.equalTo(self.mas_top).offset(XJFlexibleFont(10));

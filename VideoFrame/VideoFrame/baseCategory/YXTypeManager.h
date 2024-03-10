@@ -27,7 +27,9 @@ typedef NS_ENUM(NSUInteger, FromWayType) {
 @optional
 
 - (void)showAdWithType:(FromWayType)type;
+- (void)showAdWithType:(FromWayType)type complete:(void (^)(BOOL))complete;
 
+- (void)showAdWithType:(FromWayType)type bannerVc:(UIViewController *)vc;
 
 @end
 
@@ -46,7 +48,8 @@ typedef NS_ENUM(NSUInteger, FromWayType) {
 
 - (BOOL)getADKey;
 
-- (void)showBannerAdComplete:(void (^)(BOOL, UIView *))complete;
+//- (void)showBannerAdComplete:(void (^)(BOOL, UIView *))complete;
+- (void)showBannerAd:(UIViewController *)vc complete:(void (^)(BOOL, UIView *))complete;
 
 - (void)showBannerAdWithResult:(BOOL)complete adView:(UIView *)adView;
 

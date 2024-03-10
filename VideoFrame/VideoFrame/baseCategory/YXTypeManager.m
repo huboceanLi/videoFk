@@ -30,13 +30,17 @@ static YXTypeManager * configManager = nil;
 {
     self.complete = [complete copy];
 
-    if ([self getADKey]) {
-        self.complete(YES);
-    }else {
-        if ([self.delegate respondsToSelector:@selector(showAdWithType:)]) {
-            [self.delegate showAdWithType:type];
-        }
+//    if ([self getADKey]) {
+//        self.complete(YES);
+//    }else {
+    
+    if ([self.delegate respondsToSelector:@selector(showAdWithType:complete:)]) {
+        [self.delegate showAdWithType:type complete:complete];
     }
+//        if ([self.delegate respondsToSelector:@selector(showAdWithType:)]) {
+//            [self.delegate showAdWithType:type];
+//        }
+//    }
 }
 
 - (void)saveADKey:(NSString *)key
@@ -62,17 +66,25 @@ static YXTypeManager * configManager = nil;
     self.complete(complete);
 }
 
-- (void)showBannerAdComplete:(void (^)(BOOL, UIView *))complete
+
+//- (void)showBannerAdComplete:(void (^)(BOOL, UIView *))complete
+- (void)showBannerAd:(UIViewController *)vc complete:(void (^)(BOOL, UIView *))complete
 {
     self.adComplete = [complete copy];
     
-    if ([self getADKey]) {
-        self.adComplete(YES, nil);
-    }else {
-        if ([self.delegate respondsToSelector:@selector(showAdWithType:)]) {
-            [self.delegate showAdWithType:FromWayType_detail_banner];
-        }
+//    if ([self getADKey]) {
+//        self.adComplete(YES, nil);
+//    }else {
+    if ([self.delegate respondsToSelector:@selector(showAdWithType:bannerVc:)]) {
+        [self.delegate showAdWithType:FromWayType_detail_banner bannerVc:vc];
     }
+//        if ([self.delegate respondsToSelector:@selector(showAdWithType:)]) {
+//            [self.delegate showAdWithType:FromWayType_detail_banner];
+//        }
+//    if ([self.delegate respondsToSelector:@selector(showAdWithType:complete:)]) {
+//        [self.delegate showAdWithType:type complete:complete];
+//    }
+//    }
 }
 
 - (void)showBannerAdWithResult:(BOOL)complete adView:(UIView *)adView
